@@ -11,12 +11,12 @@ public class GraphList implements Graph {
     private int E;
     private Bag<Integer>[] adj;
     private String[] vertices;
-    private int size = 0;
+    private int size;
     public GraphList(int V) {
         this.V = V;
         this.E = 0;
         vertices = new String[V];
-        System.out.println(V);
+        // System.out.println(V);
         size = 0;
         adj = (Bag<Integer>[]) new Bag[V];
         for (int v = 0; v < V; v++) {

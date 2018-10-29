@@ -7,8 +7,8 @@ public class Solution {
 			// AdjMatrixGraph matrix = new AdjMatrixGraph();
 			Scanner sc = new Scanner(System.in);
 			String word = sc.nextLine();
-			int m = sc.nextInt();
-			int n = sc.nextInt();
+			int m = Integer.parseInt(sc.nextLine());
+			int n = Integer.parseInt(sc.nextLine());
 			while(sc.hasNext()) {
 				switch (word){
 				case "List":
