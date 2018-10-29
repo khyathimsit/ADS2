@@ -13,20 +13,20 @@ public class Solution {
 				System.out.println(m + " vertices, " + n + " edges");
 				System.out.println("No edges");
 			} else {
-			while(sc.hasNext()) {
 				switch (word){
 				case "List":
-					if (m == 0 || n == 0) {
-						System.out.println(m + " vertices, " + n + " edges");
-						System.out.println("No edges");
-						break;
-					}
+					// if (m == 0 || n == 0) {
+					// 	System.out.println(m + " vertices, " + n + " edges");
+					// 	System.out.println("No edges");
+					// 	break;
+					// }
 					String vertices = sc.nextLine();
 					String[] tokens1 = vertices.split(",");
 					GraphList list = new GraphList(m);
 					for (int i = 0; i < m; i++) {
 						list.addVertex(tokens1[i]);
 					}
+					while(sc.hasNext()){
 					String edges = sc.nextLine();
 					String[] tokens2 = edges.split(" ");
 					for (int i = 0; i < n; i++) {
@@ -36,21 +36,22 @@ public class Solution {
 						return;
 					} else {
 						System.out.println(list.toString());
-					}
+					}}
 				break;
 
 				case "Matrix":
-					if (m == 0 || n == 0) {
-						System.out.println(m + " vertices, " + n + " edges");
-						System.out.println("No edges");
-						break;
-					}
+					// if (m == 0 || n == 0) {
+					// 	System.out.println(m + " vertices, " + n + " edges");
+					// 	System.out.println("No edges");
+					// 	break;
+					// }
 					String vertices1 = sc.nextLine();
 					String[] token1 = vertices1.split(",");
 					AdjMatrixGraph matrix = new AdjMatrixGraph(m);
 					for (int i = 0; i < m; i++) {
 						matrix.addVertex(token1[i]);
 					}
+					while(sc.hasNext()){
 					String edges1 = sc.nextLine();
 					String[] token2 = new String[100];
 					for (int i = 0; i < n; i++) {
@@ -61,13 +62,12 @@ public class Solution {
 						break;
 					} else {
 						System.out.println(matrix.toString());
-					}
+					}}
 				break;
 
 				default:
 				break;
 			}
-		}
 		}
 	}
 }
