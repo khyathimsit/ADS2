@@ -232,7 +232,8 @@ Expected Output:
 No edges
 
 Your Output: 
-
+1 vertices, 1 edges
+No edges
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -241,7 +242,8 @@ Expected Output:
 No edges
 
 Your Output: 
-
+1 vertices, 1 edges
+No edges
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########
