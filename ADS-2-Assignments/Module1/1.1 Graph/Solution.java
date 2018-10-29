@@ -11,7 +11,7 @@ public class Solution {
 			int n = Integer.parseInt(sc.nextLine());
 			String[] tokens2 = new String[10];
 			String[] token2 = new String[10];
-			if (m < 2 || n < 2) {
+			if ((m < 2) || (n < 2)) {
 				System.out.println(m + " vertices, " + n + " edges");
 				System.out.println("No edges");
 			} else 
