@@ -15,6 +15,7 @@ public class Solution {
 					if (m == 0 || n == 0) {
 						System.out.println(m + " vertices, " + n + " edges");
 						System.out.println("No edges");
+						break;
 					}
 					String vertices = sc.nextLine();
 					String[] tokens1 = vertices.split(",");

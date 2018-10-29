@@ -119,11 +119,11 @@ Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:5:17: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:12:30: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:12:30: 'while' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:13:46: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:16: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:28: Line is longer than 80 characters (found 121). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:30: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:33: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:29: Line is longer than 80 characters (found 121). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:31: Line is longer than 80 characters (found 107). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:34: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
 Checkstyle ends with 12 errors.
