@@ -28,7 +28,7 @@ public class Solution {
 						list.addEdge(Integer.parseInt(tokens2[0]), Integer.parseInt(tokens2[0]));
 					}
 					if (Integer.parseInt(tokens2[0]) == Integer.parseInt(tokens2[1])) {
-						break;
+						return;
 					} else {
 						System.out.println(list.toString());
 					}
