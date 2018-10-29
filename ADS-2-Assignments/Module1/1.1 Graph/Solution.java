@@ -20,7 +20,7 @@ public class Solution {
 					String vertices = sc.nextLine();
 					String[] tokens1 = vertices.split(",");
 					GraphList list = new GraphList(m);
-					for (int i = 0; i <= m; i++) {
+					for (int i = 0; i < m; i++) {
 						list.addVertex(tokens1[i]);
 					}
 					String edges = sc.nextLine();

@@ -16,6 +16,7 @@ public class GraphList implements Graph {
         this.V = V;
         this.E = 0;
         vertices = new String[V];
+        System.out.println(V);
         size = 0;
         adj = (Bag<Integer>[]) new Bag[V];
         for (int v = 0; v < V; v++) {

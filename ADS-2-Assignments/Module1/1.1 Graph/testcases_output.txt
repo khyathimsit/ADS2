@@ -16,6 +16,7 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
+13
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:24)
 ----------------------------------------
@@ -83,6 +84,7 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
+36
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:24)
 ----------------------------------------
@@ -138,8 +140,12 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:24)
+1
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Hyderabad"
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:29)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
