@@ -14,7 +14,8 @@ public class Solution {
 			if (m == 0 || n == 0) {
 				System.out.println(m + " vertices, " + n + " edges");
 				System.out.println("No edges");
-			} else {
+			} else 
+			{
 				switch (word){
 				case "List":
 					// if (m == 0 || n == 0) {
