@@ -35,8 +35,8 @@ public class GraphList implements Graph {
     }
     public void addEdge(int v, int w) {
         if (v == w) {
-            System.out.println(V + " vertices, " + E + " edges");
-            System.out.println("No edges");
+            // System.out.println(V + " vertices, " + E + " edges");
+            // System.out.println("No edges");
             return;
         }
         E++;
