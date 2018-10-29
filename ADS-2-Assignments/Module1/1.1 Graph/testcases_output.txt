@@ -58,7 +58,7 @@ Gujarat:
 Haryana: 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:24)
+	at Solution.main(Solution.java:28)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -121,7 +121,7 @@ No edges
 0 0 0 0 0 0 0 0 0 0 0 0 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:48)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -360,7 +360,7 @@ Uttarakhand:
 West Bengal: 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:24)
+	at Solution.main(Solution.java:28)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -599,7 +599,7 @@ No edges
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:48)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 4: Passed ##########
@@ -622,21 +622,23 @@ Your Output:
 No edges
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
-
+0 vertices, 0 edges
+No edges
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
-
+0 vertices, 0 edges
+No edges
 ----------------------------------------
 

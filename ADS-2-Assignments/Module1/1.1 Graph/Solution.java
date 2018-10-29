@@ -9,6 +9,10 @@ public class Solution {
 			String word = sc.nextLine();
 			int m = Integer.parseInt(sc.nextLine());
 			int n = Integer.parseInt(sc.nextLine());
+			if (m == 0 || n == 0) {
+				System.out.println(m + " vertices, " + n + " edges");
+				System.out.println("No edges");
+			} else {
 			while(sc.hasNext()) {
 				switch (word){
 				case "List":
@@ -63,6 +67,7 @@ public class Solution {
 				default:
 				break;
 			}
+		}
 		}
 	}
 }
