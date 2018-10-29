@@ -38,7 +38,8 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:47)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -127,10 +128,21 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:47)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
+Expected Output: 
+1 vertices, 0 edges
+No edges
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:24)
+----------------------------------------
+
+########## Testcase 5: Failed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
@@ -140,16 +152,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "H
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:29)
-----------------------------------------
-
-########## Testcase 5: Failed ##########
-Expected Output: 
-1 vertices, 0 edges
-No edges
-
-Your Output: 
-
+	at Solution.main(Solution.java:53)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########

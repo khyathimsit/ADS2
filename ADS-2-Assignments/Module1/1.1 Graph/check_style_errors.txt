@@ -125,5 +125,11 @@ Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:29: Line is longer than 80 characters (found 121). [LineLength]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:31: Line is longer than 80 characters (found 107). [LineLength]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:34: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:40: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:45: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:50:70: '100' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:53: Line is longer than 80 characters (found 121). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:55: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module1\1.1 Graph\Solution.java:58: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 18 errors.
