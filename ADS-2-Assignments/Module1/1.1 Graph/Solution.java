@@ -9,6 +9,8 @@ public class Solution {
 			String word = sc.nextLine();
 			int m = Integer.parseInt(sc.nextLine());
 			int n = Integer.parseInt(sc.nextLine());
+			String[] tokens2 = new String[10];
+			String[] token2 = new String[10];
 			if (m == 0 || n == 0) {
 				System.out.println(m + " vertices, " + n + " edges");
 				System.out.println("No edges");
@@ -28,15 +30,15 @@ public class Solution {
 					}
 					while(sc.hasNext()){
 					String edges = sc.nextLine();
-					String[] tokens2 = edges.split(" ");
+					tokens2 = edges.split(" ");
 					for (int i = 0; i < n; i++) {
 						list.addEdge(Integer.parseInt(tokens2[0]), Integer.parseInt(tokens2[0]));
-					}
+					}}
 					if (Integer.parseInt(tokens2[0]) == Integer.parseInt(tokens2[1])) {
 						return;
 					} else {
 						System.out.println(list.toString());
-					}}
+					}
 				break;
 
 				case "Matrix":
@@ -53,16 +55,15 @@ public class Solution {
 					}
 					while(sc.hasNext()){
 					String edges1 = sc.nextLine();
-					String[] token2 = new String[100];
 					for (int i = 0; i < n; i++) {
 						token2 = edges1.split(" ");
 						matrix.addEdge(Integer.parseInt(token2[0]), Integer.parseInt(token2[0]));
-					}
+					}}
 					if (Integer.parseInt(token2[0]) == Integer.parseInt(token2[1])) {
 						break;
 					} else {
 						System.out.println(matrix.toString());
-					}}
+					}
 				break;
 
 				default:
