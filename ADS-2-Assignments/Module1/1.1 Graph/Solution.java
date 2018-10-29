@@ -39,6 +39,7 @@ public class Solution {
 					if (m == 0 || n == 0) {
 						System.out.println(m + " vertices, " + n + " edges");
 						System.out.println("No edges");
+						break;
 					}
 					String vertices1 = sc.nextLine();
 					String[] token1 = vertices1.split(",");

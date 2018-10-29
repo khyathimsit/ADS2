@@ -121,7 +121,7 @@ No edges
 0 0 0 0 0 0 0 0 0 0 0 0 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:48)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -599,7 +599,7 @@ No edges
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:48)
 ----------------------------------------
 
 ########## Testcase 4: Passed ##########
