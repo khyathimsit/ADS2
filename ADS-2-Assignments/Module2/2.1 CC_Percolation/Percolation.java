@@ -18,7 +18,7 @@ public class Percolation {
     /**.
      * Constructs the object.
      *
-     * @param      size  The size
+     * @param      s  The size
      */
     public Percolation(final int s) {
         this.size = s;
@@ -70,10 +70,11 @@ public class Percolation {
      *
      * @return     { description_of_the_return_value }
      */
-    public boolean isconnected(){
+    public boolean isconnected() {
         ConnectedComponents cc = new ConnectedComponents(list);
         if (cc.connected(size * size, size * size + 1)) {
             return true;
-        } return false;
+        }
+        return false;
     }
 }
