@@ -105,20 +105,6 @@ public class ConnectedComponents {
      * @return     { description_of_the_return_value }
      */
     public boolean areConnected(final int v, final int w) {
-        validateVertex(v);
-        validateVertex(w);
         return id(v) == id(w);
-    }
-    /**.
-     * { function_description }
-     *
-     * @param      v     { parameter_description }
-     */
-    private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V) {
-            throw new IllegalArgumentException("vertex " + v
-                + " is not between 0 and " + (V-1));
-        }
     }
 }
