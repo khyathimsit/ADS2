@@ -58,7 +58,7 @@ public class ConnectedComponents {
      * @return     { description_of_the_return_value }
      */
     public int id(final int v) {
-        validateVertex(v);
+        //validateVertex(v);
         return id[v];
     }
 
@@ -70,7 +70,7 @@ public class ConnectedComponents {
      * @return     { description_of_the_return_value }
      */
     public int size(final int v) {
-        validateVertex(v);
+        //validateVertex(v);
         return size[id[v]];
     }
 
@@ -92,8 +92,8 @@ public class ConnectedComponents {
      * @return     { description_of_the_return_value }
      */
     public boolean connected(final int v, final int w) {
-        validateVertex(v);
-        validateVertex(w);
+        //validateVertex(v);
+        //validateVertex(w);
         return id(v) == id(w);
     }
     /**.

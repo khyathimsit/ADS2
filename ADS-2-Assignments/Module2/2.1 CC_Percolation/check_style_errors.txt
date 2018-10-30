@@ -5,34 +5,14 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:8:24: Variable 'grid' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:12:16: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:16:18: Variable 'list' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:23:34: 'size' hides a field. [HiddenField]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:38: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:39:22: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:40:54: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:42:29: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:43:58: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:45:50: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:48:43: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:51:43: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:54:50: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:74:33: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:76:9: Conditional logic can be removed. [SimplifyBooleanReturn]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:21:8: Unused @param tag for 'size'. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:23:34: Expected @param tag for 's'. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:73:33: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Percolation.java:77:9: '}' at column 9 should be alone on a line. [RightCurly]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:8:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:8:28: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:20:49: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:24:14: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:24:32: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:27:44: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:27:45: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:28:48: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:28:49: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:28:52: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:28:53: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Solution.java:8:15: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 2 errors.
