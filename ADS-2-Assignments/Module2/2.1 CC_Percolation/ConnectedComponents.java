@@ -39,6 +39,7 @@ public class ConnectedComponents {
      *
      * @param      g     { parameter_description }
      * @param      v     { parameter_description }
+     * time complexity : O(n)
      */
     private void dfs(final Graph g, final int v) {
         marked[v] = true;
@@ -56,6 +57,7 @@ public class ConnectedComponents {
      * @param      v     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public int id(final int v) {
         //validateVertex(v);
@@ -68,6 +70,7 @@ public class ConnectedComponents {
      * @param      v     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public int size(final int v) {
         //validateVertex(v);
@@ -78,6 +81,7 @@ public class ConnectedComponents {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public int count() {
         return count;
@@ -90,6 +94,7 @@ public class ConnectedComponents {
      * @param      w     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public boolean connected(final int v, final int w) {
         //validateVertex(v);
@@ -103,6 +108,7 @@ public class ConnectedComponents {
      * @param      w     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public boolean areConnected(final int v, final int w) {
         return id(v) == id(w);

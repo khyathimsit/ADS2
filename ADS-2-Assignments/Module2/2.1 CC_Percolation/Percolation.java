@@ -31,6 +31,7 @@ public class Percolation {
      *
      * @param      row   The row
      * @param      col   The col
+     * time complexity : O(1)
      */
     public void open(final int row, final int col) {
         grid[row][col] = true;
@@ -61,6 +62,7 @@ public class Percolation {
      * @param      col   The col
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public int percolates(final int row, final int col) {
         return (size * row) + col;
@@ -69,6 +71,7 @@ public class Percolation {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public boolean isconnected() {
         ConnectedComponents cc = new ConnectedComponents(list);
