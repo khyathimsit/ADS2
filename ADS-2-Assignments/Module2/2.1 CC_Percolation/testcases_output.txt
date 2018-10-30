@@ -166,7 +166,7 @@ Your Output:
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
 	at GraphList.hasEdge(GraphList.java:75)
 	at GraphList.addEdge(GraphList.java:94)
-	at Percolation.open(Percolation.java:33)
+	at Percolation.open(Percolation.java:31)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
 
@@ -194,7 +194,7 @@ Your Output:
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
 	at GraphList.hasEdge(GraphList.java:75)
 	at GraphList.addEdge(GraphList.java:94)
-	at Percolation.open(Percolation.java:33)
+	at Percolation.open(Percolation.java:31)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
 

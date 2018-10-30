@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Percolation {
 	public boolean[][] grid;
 	public int size;
@@ -41,6 +39,8 @@ public class Percolation {
 		ConnectedComponents cc = new ConnectedComponents(list);
 		if (cc.connected(size * size, size * size + 1)) {
 			return true;
-		}return false;
+		} else {
+			return false;
+		}
 	}
 }
