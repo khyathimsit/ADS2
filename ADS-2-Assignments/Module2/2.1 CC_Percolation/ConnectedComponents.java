@@ -21,15 +21,15 @@ public class ConnectedComponents {
     /**.
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      */
-    public ConnectedComponents(final Graph G) {
-        marked = new boolean[G.vert()];
-        id = new int[G.vert()];
-        size = new int[G.vert()];
-        for (int v = 0; v < G.vert(); v++) {
+    public ConnectedComponents(final Graph g) {
+        marked = new boolean[g.vert()];
+        id = new int[g.vert()];
+        size = new int[g.vert()];
+        for (int v = 0; v < g.vert(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(g, v);
                 count++;
             }
         }
@@ -37,16 +37,16 @@ public class ConnectedComponents {
     /**.
      * { function_description }
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final Graph G, final int v) {
+    private void dfs(final Graph g, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(g, w);
             }
         }
     }
@@ -116,7 +116,9 @@ public class ConnectedComponents {
      */
     private void validateVertex(final int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException("vertex " + v
+                + " is not between 0 and " + (V-1));
+        }
     }
 }

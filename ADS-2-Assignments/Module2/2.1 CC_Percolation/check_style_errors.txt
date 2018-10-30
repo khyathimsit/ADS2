@@ -3,15 +3,11 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\ConnectedComponents.java:26:44: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\ConnectedComponents.java:43:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\ConnectedComponents.java:118:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\ConnectedComponents.java:119: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\ConnectedComponents.java:120: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\ConnectedComponents.java:120:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\ConnectedComponents.java:120:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\ConnectedComponents.java:121:48: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\ConnectedComponents.java:121:49: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
