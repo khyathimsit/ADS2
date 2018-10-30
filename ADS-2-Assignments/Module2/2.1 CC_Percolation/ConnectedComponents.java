@@ -10,10 +10,10 @@ public class ConnectedComponents {
      * @param G the undirected graph
      */
     public ConnectedComponents(Graph G) {
-        marked = new boolean[G.V()];
-        id = new int[G.V()];
-        size = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
+        marked = new boolean[G.vert()];
+        id = new int[G.vert()];
+        size = new int[G.vert()];
+        for (int v = 0; v < G.vert(); v++) {
             if (!marked[v]) {
                 dfs(G, v);
                 count++;
