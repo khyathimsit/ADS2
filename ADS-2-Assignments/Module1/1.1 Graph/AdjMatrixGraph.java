@@ -38,6 +38,7 @@ public class AdjMatrixGraph {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity is 1
      */
     public int vert() {
         return ver;
@@ -46,6 +47,7 @@ public class AdjMatrixGraph {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity is 1
      */
     public int edge() {
         return edg;
@@ -54,6 +56,7 @@ public class AdjMatrixGraph {
      * Adds a vertex.
      *
      * @param      v     { parameter_description }
+     * time complexity is 1
      */
     public void addVertex(final String v) {
         vertexes[size] = v;
@@ -64,6 +67,7 @@ public class AdjMatrixGraph {
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
+     * time complexity is 1
      */
     public void addEdge(final int v, final int w) {
         if (v == w) {
@@ -84,6 +88,7 @@ public class AdjMatrixGraph {
      * @param      w     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity is 1
      */
     public int contains(final int v, final int w) {
         return adj[v][w];
@@ -92,6 +97,7 @@ public class AdjMatrixGraph {
      * Returns a string representation of the object.
      *
      * @return     String representation of the object.
+     * time complexity is N^2
      */
     public String toString() {
         StringBuilder s = new StringBuilder();

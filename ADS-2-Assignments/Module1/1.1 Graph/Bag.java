@@ -41,6 +41,7 @@ public class Bag<Item> implements Iterable<Item> {
  * Determines if empty.
  *
  * @return     True if empty, False otherwise.
+ * time complexity is 1
  */
     public boolean isEmpty() {
         return first == null;
@@ -49,6 +50,7 @@ public class Bag<Item> implements Iterable<Item> {
  * { function_description }
  *
  * @return     { description_of_the_return_value }
+ * time complexity is 1
  */
     public int size() {
         return n;
@@ -57,6 +59,7 @@ public class Bag<Item> implements Iterable<Item> {
  * { function_description }
  *
  * @param      item  The item
+ * time complexity is 1
  */
     public void add(final Item item) {
         Node oldfirst = first;
@@ -69,6 +72,7 @@ public class Bag<Item> implements Iterable<Item> {
  * { function_description }
  *
  * @return     { description_of_the_return_value }
+ * time complexity is 1
  */
     public Iterator<Item> iterator()  {
         return new ListIterator();
@@ -85,12 +89,14 @@ public class Bag<Item> implements Iterable<Item> {
          * Determines if it has next.
          *
          * @return     True if has next, False otherwise.
+         * time complexity is 1
          */
         public boolean hasNext() {
             return current != null;
         }
         /**.
          * { function_description }
+         * time complexity is 1
          */
         public void remove() {
             throw new UnsupportedOperationException();
@@ -99,6 +105,7 @@ public class Bag<Item> implements Iterable<Item> {
          * { function_description }
          *
          * @return     { description_of_the_return_value }
+         * time complexity is 1
          */
         public Item next() {
             Item item = current.item;

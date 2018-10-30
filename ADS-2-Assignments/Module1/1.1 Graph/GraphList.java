@@ -82,7 +82,7 @@ class GraphList implements Graph {
 
     /**
      * Returns the number of vertices in this graph.
-     *
+     * time complexity is 1
      * @return the number of vertices in this graph
      */
     public int vert() {
@@ -91,7 +91,7 @@ class GraphList implements Graph {
 
     /**
      * Returns the number of edges in this graph.
-     *
+     * time complexity is 1
      * @return the number of edges in this graph
      */
     public int edge() {
@@ -99,7 +99,7 @@ class GraphList implements Graph {
     }
     /**.
      * Adds a vertex.
-     *
+     * time complexity is 1
      * @param      v     { parameter_description }
      */
     public void addVertex(final String v) {
@@ -113,6 +113,7 @@ class GraphList implements Graph {
      * @param      w     { parameter_description }
      *
      * @return     True if has edge, False otherwise.
+     * time complexity is N
      */
     public boolean hasEdge(final int v, final int w) {
         for (int i : adj[w]) {
@@ -124,7 +125,7 @@ class GraphList implements Graph {
     }
     /**
      * Adds the undirected edge v-w to this graph.
-     *
+     * time complexity is 1
      * @param  v one vertex in the edge
      * @param  w the other vertex in the edge
      */
@@ -146,6 +147,7 @@ class GraphList implements Graph {
      * @param  v the vertex
      * @return the vertices adjacent to vertex {@code v}, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * time complexity is 1
      */
     public Iterable<Integer> adj(final int v) {
         return adj[v];
@@ -157,6 +159,7 @@ class GraphList implements Graph {
      * @param  v the vertex
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * time complexity is 1
      */
     public int degree(final int v) {
         return adj[v].size();
@@ -169,6 +172,7 @@ class GraphList implements Graph {
      * @return the number of vertices <em>V</em>, followed by
      * the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
+     * time complexity is N^2
      */
     public String toString() {
         String s = "";
