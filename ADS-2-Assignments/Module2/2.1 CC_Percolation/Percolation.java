@@ -1,17 +1,17 @@
 public class Percolation {
 	public boolean[][] grid;
 	public int size;
-	public GraphList list;
+	public Graph list;
 
 	public Percolation(int size) {
 		this.size = size;
 		grid = new boolean[size][size];
-		list = new GraphList(size * size + 2);
+		list = new Graph(size * size + 2);
 	}
 
 	public void open(int row, int col) {
 		grid[row][col] = true;
-		size += 1;
+		//size += 1;
 		
 		if(row == 0){
 			list.addEdge(size * size, percolates(row,col));
