@@ -94,9 +94,7 @@ class Graph {
             System.out.println("No edges");
             return;
         }
-        if (!hasEdge(v, w)) {
             edg++;
-        }
         adj[v].add(w);
         adj[w].add(v);
     }
