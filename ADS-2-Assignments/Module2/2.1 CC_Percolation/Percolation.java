@@ -11,6 +11,7 @@ public class Percolation {
 
 	public void open(int row, int col) {
 		grid[row][col] = true;
+		size += 1;
 		
 		if(row == 0){
 			list.addEdge(size * size, percolates(row,col));

@@ -1,25 +1,34 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 628
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:26)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 196
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -30,44 +39,58 @@ Your Output:
 false
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 16
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at Percolation.open(Percolation.java:22)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 36
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -75,15 +98,20 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 49
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7
+	at Percolation.open(Percolation.java:22)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -91,23 +119,32 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 81
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 81
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 13: Passed ##########
+########## Testcase 13: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 196
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -115,31 +152,41 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at Percolation.open(Percolation.java:22)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 15: Passed ##########
+########## Testcase 15: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2601
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 16: Passed ##########
+########## Testcase 16: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 676
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 17: Passed ##########
+########## Testcase 17: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
+	at Percolation.open(Percolation.java:31)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -147,15 +194,22 @@ Expected Output:
 true
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3940
+	at GraphList.hasEdge(GraphList.java:75)
+	at GraphList.addEdge(GraphList.java:94)
+	at Percolation.open(Percolation.java:32)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 19: Passed ##########
+########## Testcase 19: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2304
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -163,27 +217,30 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at GraphList.hasEdge(GraphList.java:75)
-	at GraphList.addEdge(GraphList.java:94)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3969
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
+	at Solution.main(Solution.java:10)
+----------------------------------------
+
+########## Testcase 21: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 13
 	at Percolation.open(Percolation.java:31)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
 
-########## Testcase 21: Passed ##########
+########## Testcase 22: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
-----------------------------------------
-
-########## Testcase 22: Passed ##########
-Expected Output: 
-true
-
-Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 101
+	at Percolation.open(Percolation.java:31)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -191,10 +248,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at GraphList.hasEdge(GraphList.java:75)
-	at GraphList.addEdge(GraphList.java:94)
-	at Percolation.open(Percolation.java:31)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11449
+	at GraphList.addEdge(GraphList.java:97)
+	at Percolation.open(Percolation.java:17)
 	at Solution.main(Solution.java:10)
 ----------------------------------------
 
