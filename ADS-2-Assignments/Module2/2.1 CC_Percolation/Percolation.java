@@ -26,10 +26,10 @@ public class Percolation {
 			list.addEdge(percolates(row, col), percolates(row-1, col));
 		}
 		if(col > 0 && grid[row][col-1]){ //left element
-			list.addEdge(percolates(row, col), percolates(row, col + 1));
+			list.addEdge(percolates(row, col), percolates(row, col - 1));
 		}
 		if(col < size - 1 && grid[row][col+1]){ //right element
-			list.addEdge(percolates(row, col), percolates(row, col - 1));
+			list.addEdge(percolates(row, col), percolates(row, col + 1));
 		}
 	}
 	public int percolates(int row, int col) {

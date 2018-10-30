@@ -70,12 +70,12 @@ Your Output:
 true
 ----------------------------------------
 
-########## Testcase 9: Failed ##########
+########## Testcase 9: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-false
+true
 ----------------------------------------
 
 ########## Testcase 10: Passed ##########
@@ -86,12 +86,12 @@ Your Output:
 true
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-false
+true
 ----------------------------------------
 
 ########## Testcase 12: Passed ##########
@@ -110,12 +110,12 @@ Your Output:
 false
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-false
+true
 ----------------------------------------
 
 ########## Testcase 15: Passed ##########
@@ -142,12 +142,12 @@ Your Output:
 true
 ----------------------------------------
 
-########## Testcase 18: Failed ##########
+########## Testcase 18: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-false
+true
 ----------------------------------------
 
 ########## Testcase 19: Passed ##########
@@ -158,16 +158,12 @@ Your Output:
 true
 ----------------------------------------
 
-########## Testcase 20: Failed ##########
+########## Testcase 20: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Graph.hasEdge(Graph.java:78)
-	at Graph.addEdge(Graph.java:97)
-	at Percolation.open(Percolation.java:32)
-	at Solution.main(Solution.java:10)
+true
 ----------------------------------------
 
 ########## Testcase 21: Passed ##########
@@ -186,15 +182,11 @@ Your Output:
 true
 ----------------------------------------
 
-########## Testcase 23: Failed ##########
+########## Testcase 23: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Graph.hasEdge(Graph.java:78)
-	at Graph.addEdge(Graph.java:97)
-	at Percolation.open(Percolation.java:32)
-	at Solution.main(Solution.java:10)
+true
 ----------------------------------------
 

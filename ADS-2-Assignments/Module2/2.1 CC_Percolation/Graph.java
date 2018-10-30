@@ -65,23 +65,6 @@ class Graph {
         vertexes[size] = v;
         size++;
     }
-    /**.
-     * Determines if it has edge.
-     *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     True if has edge, False otherwise.
-     * time complexity is N
-     */
-    public boolean hasEdge(final int v, final int w) {
-        for (int i : adj[w]) {
-            if (i == w) {
-                return true;
-            }
-        }
-        return false;
-    }
     /**
      * Adds the undirected edge v-w to this graph.
      * time complexity is 1
