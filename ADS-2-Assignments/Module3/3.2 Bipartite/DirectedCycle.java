@@ -17,22 +17,21 @@ public class DirectedCycle {
     /**.
      * { var_description }
      */
-    private boolean isB = false;
+    private boolean isBipartite = false;
     /**.
      * { var_description }
      */
     private Stack<Integer> cycle;
     /**.
-     * Constructs the object.
-     *
-     * @param      g     { parameter_description }
+     * Determines whether the digraph has a directed cycle and, if so,
+     * finds such a cycle.
+     * @param g the digraph
      */
     public DirectedCycle(final Graph g) {
-        isB = true;
-        marked  = new boolean[g.v1()];
-        onStack = new boolean[g.v1()];
-        edgeTo  = new int[g.v1()];
-        for (int v = 0; v < g.v1(); v++) {
+        marked  = new boolean[g.vert()];
+        onStack = new boolean[g.vert()];
+        edgeTo  = new int[g.vert()];
+        for (int v = 0; v < g.vert(); v++) {
             if (!marked[v] && cycle == null) {
                 dfs(g, v);
             }
@@ -45,7 +44,7 @@ public class DirectedCycle {
      * @param      v     { parameter_description }
      */
     private void dfs(final Graph g, final int v) {
-
+        isBipartite = !isBipartite;
         onStack[v] = true;
         marked[v] = true;
         for (int w : g.adj(v)) {
@@ -61,7 +60,7 @@ public class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
+                // assert check();
             }
         }
         onStack[v] = false;
@@ -80,7 +79,7 @@ public class DirectedCycle {
      * @return     True if bipartite, False otherwise.
      */
     public boolean isBipartite() {
-        return isB;
+        return isBipartite;
     }
     /**.
      * { function_description }
@@ -89,26 +88,5 @@ public class DirectedCycle {
      */
     public Iterable<Integer> cycle() {
         return cycle;
-    }
-    /**.
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private boolean check() {
-        if (hasCycle()) {
-            int first = -1;
-            int last = -1;
-            for (int v : cycle()) {
-                if (first == -1) {
-                    first = v;
-                    last = v;
-                }
-            }
-            if (first != last) {
-                return false;
-            }
-        }
-        return true;
     }
 }

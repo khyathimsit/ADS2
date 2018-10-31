@@ -46,7 +46,7 @@ public class Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int v1() {
+    public int vert() {
         return v1;
     }
     /**.
