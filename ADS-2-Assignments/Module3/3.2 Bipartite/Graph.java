@@ -5,11 +5,11 @@ public class Graph {
     /**.
      * { var_description }
      */
-    private final int V;
+    private final int v1;
     /**.
      * { var_description }
      */
-    private int E;
+    private int e;
     /**.
      * { var_description }
      */
@@ -17,27 +17,27 @@ public class Graph {
     /**.
      * Constructs the object.
      *
-     * @param      V     { parameter_description }
+     * @param      v1     { parameter_description }
      */
-    public Graph(final int V) {
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+    public Graph(final int v1) {
+        this.v1 = v1;
+        this.e = 0;
+        adj = (Bag<Integer>[]) new Bag[v1];
+        for (int v = 0; v < v1; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
     /**.
      * Constructs the object.
      *
-     * @param      V     { parameter_description }
-     * @param      E     { parameter_description }
+     * @param      v1    { parameter_description }
+     * @param      e     { parameter_description }
      */
-    public Graph(final int V, final int E) {
-        this(V);
-        for (int i = 0; i < E; i++) {
-            int v = (int) (Math.random() * V);
-            int w = (int) (Math.random() * V);
+    public Graph(final int v1, final int e) {
+        this(v1);
+        for (int i = 0; i < e; i++) {
+            int v = (int) (Math.random() * v1);
+            int w = (int) (Math.random() * v1);
             addEdge(v, w);
         }
     }
@@ -46,16 +46,16 @@ public class Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V() {
-        return V;
+    public int v1() {
+        return v1;
     }
     /**.
      * { function_description }
      *
      * @return     { description_of_the_return_value }
      */
-    public int E() {
-        return E;
+    public int e() {
+        return e;
     }
     /**.
      * Adds an edge.
@@ -64,7 +64,7 @@ public class Graph {
      * @param      w     { parameter_description }
      */
     public void addEdge(final int v, final int w) {
-        E++;
+        e++;
         adj[v].add(w);
         adj[w].add(v);
     }
@@ -85,15 +85,16 @@ public class Graph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        String NEWLINE = System.getProperty("line.separator");
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
+        String newline = System.getProperty("line.separator");
+        s.append(v1 + " vertices, " + e + " edges " + newline);
+        for (int v = 0; v < v1; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");
             }
-            s.append(NEWLINE);
+            s.append(newline);
         }
         return s.toString();
     }
 }
+

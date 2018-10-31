@@ -15,7 +15,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**.
      * { var_description }
      */
-    private int N;
+    private int n;
     /**.
      * { var_description }
      */
@@ -58,7 +58,7 @@ public class Queue<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public int size() {
-        return N;     
+        return n;
     }
     /**.
      * { function_description }
@@ -86,7 +86,7 @@ public class Queue<Item> implements Iterable<Item> {
             last.next = x;
             last = x;
         }
-        N++;
+        n++;
     }
     /**.
      * { function_description }
@@ -99,7 +99,7 @@ public class Queue<Item> implements Iterable<Item> {
         }
         Item item = first.item;
         first = first.next;
-        N--;
+        n--;
         if (isEmpty()) {
         last = null;
         }
@@ -116,19 +116,22 @@ public class Queue<Item> implements Iterable<Item> {
             s.append(item + " ");
         }
         return s.toString();
-    } 
+    }
     /**.
      * { function_description }
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterator<Item> iterator()  {
-        return new ListIterator();  
+    public Iterator<Item> iterator() {
+        return new ListIterator();
     }
     /**.
      * Class for list iterator.
      */
     private class ListIterator implements Iterator<Item> {
+        /**.
+         * { var_description }
+         */
         private Node current = first;
         /**.
          * Determines if it has next.
@@ -159,3 +162,4 @@ public class Queue<Item> implements Iterable<Item> {
         }
     }
 }
+
