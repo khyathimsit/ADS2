@@ -25,7 +25,7 @@ public class DirectedCycle {
      * @param      G     { parameter_description }
      */
     public DirectedCycle(final Graph G) {
-        isBipartite = !isBipartite;
+        isBipartite = true;
         marked  = new boolean[G.V()];
         onStack = new boolean[G.V()];
         edgeTo  = new int[G.V()];
