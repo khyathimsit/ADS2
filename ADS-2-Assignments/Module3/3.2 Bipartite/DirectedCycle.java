@@ -17,7 +17,7 @@ public class DirectedCycle {
     /**.
      * { var_description }
      */
-    private boolean isBipartite = false;
+    private boolean isB = false;
     /**.
      * { var_description }
      */
@@ -28,7 +28,7 @@ public class DirectedCycle {
      * @param      g     { parameter_description }
      */
     public DirectedCycle(final Graph g) {
-        isBipartite = true;
+        isB = true;
         marked  = new boolean[g.v1()];
         onStack = new boolean[g.v1()];
         edgeTo  = new int[g.v1()];
@@ -74,9 +74,13 @@ public class DirectedCycle {
     public boolean hasCycle() {
         return cycle != null;
     }
-
+    /**.
+     * Determines if bipartite.
+     *
+     * @return     True if bipartite, False otherwise.
+     */
     public boolean isBipartite() {
-        return isBipartite;
+        return isB;
     }
     /**.
      * { function_description }
