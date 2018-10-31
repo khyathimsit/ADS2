@@ -17,10 +17,10 @@ public class Graph {
     /**.
      * Constructs the object.
      *
-     * @param      v1     { parameter_description }
+     * @param      l     { parameter_description }
      */
-    public Graph(final int v1) {
-        this.v1 = v1;
+    public Graph(final int l) {
+        this.v1 = l;
         this.e = 0;
         adj = (Bag<Integer>[]) new Bag[v1];
         for (int v = 0; v < v1; v++) {
@@ -30,12 +30,12 @@ public class Graph {
     /**.
      * Constructs the object.
      *
-     * @param      v1    { parameter_description }
-     * @param      e     { parameter_description }
+     * @param      m    { parameter_description }
+     * @param      k     { parameter_description }
      */
-    public Graph(final int v1, final int e) {
-        this(v1);
-        for (int i = 0; i < e; i++) {
+    public Graph(final int m, final int k) {
+        this(m);
+        for (int i = 0; i < k; i++) {
             int v = (int) (Math.random() * v1);
             int w = (int) (Math.random() * v1);
             addEdge(v, w);

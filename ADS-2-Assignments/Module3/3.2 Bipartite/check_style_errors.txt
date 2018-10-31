@@ -6,11 +6,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module3\3.2 Bipartite\Graph.java:22:28: 'v1' hides a field. [HiddenField]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module3\3.2 Bipartite\Graph.java:36:28: 'v1' hides a field. [HiddenField]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module3\3.2 Bipartite\Graph.java:36:42: 'e' hides a field. [HiddenField]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module3\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
