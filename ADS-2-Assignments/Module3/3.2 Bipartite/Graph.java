@@ -45,6 +45,7 @@ public class Graph {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public int vert() {
         return v1;
@@ -53,6 +54,7 @@ public class Graph {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public int e() {
         return e;
@@ -62,6 +64,7 @@ public class Graph {
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
+     * time complexity : O(1)
      */
     public void addEdge(final int v, final int w) {
         e++;
@@ -74,28 +77,29 @@ public class Graph {
      * @param      v     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
-    /**.
-     * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
-     */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        String newline = System.getProperty("line.separator");
-        s.append(v1 + " vertices, " + e + " edges " + newline);
-        for (int v = 0; v < v1; v++) {
-            s.append(v + ": ");
-            for (int w : adj[v]) {
-                s.append(w + " ");
-            }
-            s.append(newline);
-        }
-        return s.toString();
-    }
+    // /**.
+    //  * Returns a string representation of the object.
+    //  *
+    //  * @return     String representation of the object.
+    //  */
+    // public String toString() {
+    //     StringBuilder s = new StringBuilder();
+    //     String newline = System.getProperty("line.separator");
+    //     s.append(v1 + " vertices, " + e + " edges " + newline);
+    //     for (int v = 0; v < v1; v++) {
+    //         s.append(v + ": ");
+    //         for (int w : adj[v]) {
+    //             s.append(w + " ");
+    //         }
+    //         s.append(newline);
+    //     }
+    //     return s.toString();
+    // }
 }
 
 
