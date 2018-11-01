@@ -105,8 +105,9 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        for (Item item : this)
+        for (Item item : this) {
             s.append(item + " ");
+        }
         return s.toString();
     }
     /**.
@@ -120,9 +121,12 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**.
      * Class for list iterator.
-     * 
+     *
      */
     private class ListIterator implements Iterator<Item> {
+        /**.
+         * { var_description }
+         */
         private Node current = first;
         /**.
          * Determines if it has next.
