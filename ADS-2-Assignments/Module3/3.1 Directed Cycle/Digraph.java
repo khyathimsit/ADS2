@@ -37,7 +37,6 @@ public class Digraph {
             adj[v] = new Bag<Integer>();
         }
     }
-   
     /**.
      * { function_description }
      *
@@ -63,9 +62,10 @@ public class Digraph {
      * time complexity:O(1)
      */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= v1)
+        if (v < 0 || v >= v1) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (v1-1));
+                "vertex " + v + " is not between 0 and " + (v1 - 1));
+        }
     }
     /**.
      * Adds an edge.

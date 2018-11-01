@@ -21,34 +21,34 @@ public class DirectedCycle {
     /**.
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      */
-    public DirectedCycle(final Digraph G) {
-        marked  = new boolean[G.v1()];
-        onStack = new boolean[G.v1()];
-        edgeTo  = new int[G.v1()];
-        for (int v = 0; v < G.v1(); v++) {
+    public DirectedCycle(final Digraph g) {
+        marked  = new boolean[g.v1()];
+        onStack = new boolean[g.v1()];
+        edgeTo  = new int[g.v1()];
+        for (int v = 0; v < g.v1(); v++) {
             if (!marked[v] && cycle == null) {
-                dfs(G, v);
+                dfs(g, v);
             }
         }
     }
     /**.
      * { function_description }
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      * @param      v     { parameter_description }
      * time complexity : no of edges + vertices
      */
-    private void dfs(final Digraph G, final int v) {
+    private void dfs(final Digraph g, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
             if (cycle != null) {
                 return;
             } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(g, w);
             } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
