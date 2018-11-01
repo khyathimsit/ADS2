@@ -38,6 +38,7 @@ public class DirectedCycle {
      *
      * @param      G     { parameter_description }
      * @param      v     { parameter_description }
+     * time complexity : no of edges + vertices
      */
     private void dfs(final Digraph G, final int v) {
         onStack[v] = true;
@@ -55,7 +56,7 @@ public class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
+                //assert check();
             }
         }
         onStack[v] = false;
@@ -64,6 +65,7 @@ public class DirectedCycle {
      * Determines if it has cycle.
      *
      * @return     True if has cycle, False otherwise.
+     * time complexity : O(1)
      */
     public boolean hasCycle() {
         return cycle != null;
@@ -72,29 +74,30 @@ public class DirectedCycle {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity : O(1)
      */
     public Iterable<Integer> cycle() {
         return cycle;
     }
-    /**.
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private boolean check() {
-        if (hasCycle()) {
-            int first = -1;
-            int last = -1;
-            for (int v : cycle()) {
-                if (first == -1) {
-                    first = v;
-                    last = v;
-                }
-            }
-            if (first != last) {
-                return false;
-            }
-        }
-        return true;
-    }
+    // /**.
+    //  * { function_description }
+    //  *
+    //  * @return     { description_of_the_return_value }
+    //  */
+    // private boolean check() {
+    //     if (hasCycle()) {
+    //         int first = -1;
+    //         int last = -1;
+    //         for (int v : cycle()) {
+    //             if (first == -1) {
+    //                 first = v;
+    //                 last = v;
+    //             }
+    //         }
+    //         if (first != last) {
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
 }

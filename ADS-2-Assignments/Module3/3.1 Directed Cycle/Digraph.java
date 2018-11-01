@@ -41,50 +41,12 @@ public class Digraph {
             adj[v] = new Bag<Integer>();
         }
     }
-    // /**.
-    //  * Constructs the object.
-    //  *
-    //  * @param      in    { parameter_description }
-    //  */
-    // public Digraph(final In in) {
-    //     this.V = in.readInt();
-    //     indegree = new int[V];
-    //     adj = (Bag<Integer>[]) new Bag[V];
-    //     for (int v = 0; v < V; v++) {
-    //         adj[v] = new Bag<Integer>();
-    //     }
-    //     int E = in.readInt();
-    //     for (int i = 0; i < E; i++) {
-    //         int v = in.readInt();
-    //         int w = in.readInt();
-    //         addEdge(v, w); 
-    //     }
-    // }
-    // /**.
-    //  * Constructs the object.
-    //  *
-    //  * @param      G     { parameter_description }
-    //  */
-    // public Digraph(final Digraph G) {
-    //     this(G.V());
-    //     this.E = G.E();
-    //     for (int v = 0; v < V; v++) {
-    //         this.indegree[v] = G.indegree(v);
-    //     }
-    //     for (int v = 0; v < G.V(); v++) {
-    //         Stack<Integer> reverse = new Stack<Integer>();
-    //         for (int w : G.adj[v]) {
-    //             reverse.push(w);
-    //         }
-    //         for (int w : reverse) {
-    //             adj[v].add(w);
-    //         }
-    //     }
-    // }
+   
     /**.
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity:O(1)
      */
     public int V() {
         return V;
@@ -93,6 +55,7 @@ public class Digraph {
      * { function_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity:O(1)
      */
     public int E() {
         return E;
@@ -101,6 +64,7 @@ public class Digraph {
      * { function_description }
      *
      * @param      v     { parameter_description }
+     * time complexity:O(1)
      */
     private void validateVertex(final int v) {
         if (v < 0 || v >= V)
@@ -112,6 +76,7 @@ public class Digraph {
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
+     * time complexity:O(1)
      */
     public void addEdge(final int v, final int w) {
         validateVertex(v);
@@ -126,6 +91,7 @@ public class Digraph {
      * @param      v     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity:O(1)
      */
     public Iterable<Integer> adj(final int v) {
         validateVertex(v);
@@ -137,6 +103,7 @@ public class Digraph {
      * @param      v     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity:O(1)
      */
     public int outdegree(final int v) {
         validateVertex(v);
@@ -148,40 +115,10 @@ public class Digraph {
      * @param      v     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity:O(1)
      */
     public int indegree(final int v) {
         validateVertex(v);
         return indegree[v];
-    }
-    /**.
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
-            for (int w : adj(v)) {
-                reverse.addEdge(w, v);
-            }
-        }
-        return reverse;
-    }
-    /**.
-     * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
-     */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(String.format("%d: ", v));
-            for (int w : adj[v]) {
-                s.append(String.format("%d ", w));
-            }
-            s.append(NEWLINE);
-        }
-        return s.toString();
     }
 }
