@@ -1,24 +1,20 @@
 /**.
- * { item_description }
- */
-import java.util.NoSuchElementException;
-/**.
  * Class for digraph.
  */
 public class Digraph {
     /**.
      * { var_description }
      */
-    private static final String 
+    private static final String
     NEWLINE = System.getProperty("line.separator");
     /**.
      * { var_description }
      */
-    private final int V;
+    private final int v1;
     /**.
      * { var_description }
      */
-    private int E;
+    private int e;
     /**.
      * { var_description }
      */
@@ -30,14 +26,14 @@ public class Digraph {
     /**.
      * Constructs the object.
      *
-     * @param      V     { parameter_description }
+     * @param      l     { parameter_description }
      */
-    public Digraph(final int V) {
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+    public Digraph(final int l) {
+        this.v1 = l;
+        this.e = 0;
+        indegree = new int[v1];
+        adj = (Bag<Integer>[]) new Bag[v1];
+        for (int v = 0; v < v1; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -48,8 +44,8 @@ public class Digraph {
      * @return     { description_of_the_return_value }
      * time complexity:O(1)
      */
-    public int V() {
-        return V;
+    public int v1() {
+        return v1;
     }
     /**.
      * { function_description }
@@ -57,8 +53,8 @@ public class Digraph {
      * @return     { description_of_the_return_value }
      * time complexity:O(1)
      */
-    public int E() {
-        return E;
+    public int e() {
+        return e;
     }
     /**.
      * { function_description }
@@ -67,9 +63,9 @@ public class Digraph {
      * time complexity:O(1)
      */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= V)
+        if (v < 0 || v >= v1)
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V-1));
+                "vertex " + v + " is not between 0 and " + (v1-1));
     }
     /**.
      * Adds an edge.
@@ -83,7 +79,7 @@ public class Digraph {
         validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        e++;
     }
     /**.
      * { function_description }
