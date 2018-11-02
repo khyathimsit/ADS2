@@ -21,32 +21,33 @@ public class BreadthFirstSearch {
     /**.
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      * @param      s     { parameter_description }
      */
-    public BreadthFirstSearch(final Digraph G, final int s) {
-        marked = new boolean[G.V()];
-        distTo = new int[G.V()];
-        edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
+    public BreadthFirstSearch(final Digraph g, final int s) {
+        marked = new boolean[g.V()];
+        distTo = new int[g.V()];
+        edgeTo = new int[g.V()];
+        for (int v = 0; v < g.V(); v++) {
             distTo[v] = INFINITY;
+        }
         validateVertex(s);
-        bfs(G, s);
+        bfs(g, s);
     }
     /**.
      * { function_description }
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      * @param      s     { parameter_description }
      */
-    private void bfs(final Digraph G, final int s) {
+    private void bfs(final Digraph g, final int s) {
         Queue<Integer> q = new Queue<Integer>();
         marked[s] = true;
         distTo[s] = 0;
         q.enqueue(s);
         while (!q.isEmpty()) {
             int v = q.dequeue();
-            for (int w : G.adj(v)) {
+            for (int w : g.adj(v)) {
                 if (!marked[w]) {
                     edgeTo[w] = v;
                     distTo[w] = distTo[v] + 1;
@@ -92,7 +93,7 @@ public class BreadthFirstSearch {
         }
         Stack<Integer> path = new Stack<Integer>();
         int x;
-        for (x = v; distTo[x] != 0; x = edgeTo[x]){
+        for (x = v; distTo[x] != 0; x = edgeTo[x]) {
             path.push(x);
         }
         path.push(x);
@@ -104,10 +105,10 @@ public class BreadthFirstSearch {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V) {
+        int v1 = marked.length;
+        if (v < 0 || v >= v1) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V-1));
+                "vertex " + v + " is not between 0 and " + (v1 - 1));
         }
     }
     /**.
@@ -119,11 +120,11 @@ public class BreadthFirstSearch {
         if (vertices == null) {
             throw new IllegalArgumentException("argument is null");
         }
-        int V = marked.length;
+        int v1 = marked.length;
         for (int v : vertices) {
-            if (v < 0 || v >= V) {
+            if (v < 0 || v >= v1) {
                 throw new IllegalArgumentException(
-                    "vertex " + v + " is not between 0 and " + (V-1));
+                    "vertex " + v + " is not between 0 and " + (v1 - 1));
             }
         }
     }

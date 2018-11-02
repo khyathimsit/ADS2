@@ -1,33 +1,19 @@
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:27:45: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:31: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:42:36: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:95:51: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:107:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:110:62: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:110:63: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:122:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:126:66: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:126:67: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 10 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:4:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:12: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:17:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:21:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:35:30: 'V' hides a field. [HiddenField]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:35:30: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:53:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:74:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:82:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:8: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:13:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:17:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:31:30: 'V' hides a field. [HiddenField]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:31:30: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:49:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:70:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:78:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -156,9 +142,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:4: Using the '.*' form of import should be avoided - java.io.*. [AvoidStarImport]

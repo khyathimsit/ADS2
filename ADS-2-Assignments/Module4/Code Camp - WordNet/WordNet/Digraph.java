@@ -1,8 +1,4 @@
 /**.
- * { item_description }
- */
-import java.util.NoSuchElementException;
-/**.
  * Class for digraph.
  */
 public class Digraph {
