@@ -5,16 +5,11 @@ public class Digraph {
     /**.
      * { var_description }
      */
-    private static final String NEWLINE =
-       System.getProperty("line.separator");
+    private int ver;
     /**.
      * { var_description }
      */
-    private final int v1;
-    /**.
-     * { var_description }
-     */
-    private int e;
+    private int edg;
     /**.
      * { var_description }
      */
@@ -22,149 +17,111 @@ public class Digraph {
     /**.
      * { var_description }
      */
+    private int size = 0;
+    /**.
+     * { var_description }
+     */
     private int[] indegree;
-    /**.
-     * Constructs the object.
+    /**
+     * Initializes an empty graph with V vertices and 0 edges.
+     * param V the number of vertices
      *
-     * @param      v     { parameter_description }
+     * @param  vt number of vertices
      */
-    public Digraph(final int v) {
-        if (v < 0) {
-            throw new IllegalArgumentException(
-                "Number of vertices in a Digraph must be nonnegative");
-        }
-        this.v1 = v;
-        this.e = 0;
-        indegree = new int[v1];
-        adj = (Bag<Integer>[]) new Bag[v1];
-        for (int l = 0; l < v1; l++) {
-            adj[l] = new Bag<Integer>();
+    Digraph(final int vt) {
+        this.ver = vt;
+        this.edg = 0;
+        indegree = new int[ver];
+        size = 0;
+        adj = (Bag<Integer>[]) new Bag[ver];
+        for (int v = 0; v < ver; v++) {
+            adj[v] = new Bag<Integer>();
         }
     }
-    /**.
-     * Constructs the object.
-     *
-     * @param      g     { parameter_description }
+
+    /**
+     * Returns the number of vertices in this graph.
+     * time complexity is 1 in avg case
+     * @return the number of vertices in this graph
      */
-    public Digraph(final Digraph g) {
-        this(g.v1());
-        this.e = g.e();
-        for (int v = 0; v < v1; v++) {
-            this.indegree[v] = g.indegree(v);
-        }
-        for (int v = 0; v < g.v1(); v++) {
-            Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : g.adj[v]) {
-                reverse.push(w);
-            }
-            for (int w : reverse) {
-                adj[v].add(w);
-            }
-        }
+    public int vert() {
+        return ver;
     }
-    /**.
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
+
+    /**
+     * Returns the number of edges in this graph.
+     * time complexity is 1 in avg case
+     * @return the number of edges in this graph
      */
-    public int v1() {
-        return v1;
+    public int edge() {
+        return edg;
     }
+    // /**.
+    //  * Adds a vertex.
+    //  * time complexity is 1
+    //  * @param      v     { parameter_description }
+    //  */
+    // public void addVertex(final String v) {
+    //     vertexes[size] = v;
+    //     size++;
+    // }
     /**.
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int e() {
-        return e;
-    }
-    /**.
-     * { function_description }
-     *
-     * @param      v     { parameter_description }
-     */
-    private void validateVertex(final int v) {
-        if (v < 0 || v >= v1) {
-            throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (v1 - 1));
-        }
-    }
-    /**.
-     * Adds an edge.
-     *
+     * Determines if it has edge.
+     * time complexity is O(N).
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int v, final int w) {
+        for (int i : adj[w]) {
+            if (i == w) {
+                return true;
+            }
+        }
+        return false;
+    }
+    /**
+     * Adds the undirected edge v-w to this graph.
+     * time complexity is 1 in avg case
+     * @param  v one vertex in the edge
+     * @param  w the other vertex in the edge
      */
     public void addEdge(final int v, final int w) {
-        validateVertex(v);
-        validateVertex(w);
+        edg++;
         adj[v].add(w);
         indegree[w]++;
-        e++;
+        // adj[w].add(v);
     }
-    /**.
-     * { function_description }
-     *
-     * @param      v     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+    /**
+     * Returns the vertices adjacent to vertex {@code v}.
+     * time complexity is 1 in avg case
+     * @param  v the vertex
+     * @return the vertices adjacent to vertex {@code v}, as an iterable
+     * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public Iterable<Integer> adj(final int v) {
-        validateVertex(v);
         return adj[v];
     }
-    /**.
-     * { function_description }
-     *
-     * @param      v     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+
+    /**
+     * Returns the degree of vertex {@code v}.
+     * time complexity in average case is 1.
+     * @param  v the vertex
+     * @return the degree of vertex {@code v}
      */
     public int outdegree(final int v) {
-        validateVertex(v);
         return adj[v].size();
     }
-    /**.
-     * { function_description }
+
+    /**
+     * time complexity in average case is 1.
      *
-     * @param      v     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @param  v the vertex
+     * @return the indegree of vertex {@code v}
      */
     public int indegree(final int v) {
-        validateVertex(v);
         return indegree[v];
     }
-    /**.
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Digraph reverse() {
-        Digraph reverse = new Digraph(v1);
-        for (int v = 0; v < v1; v++) {
-            for (int w : adj(v)) {
-                reverse.addEdge(w, v);
-            }
-        }
-        return reverse;
-    }
-    /**.
-     * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
-     */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(v1 + " vertices, " + e + " edges " + NEWLINE);
-        for (int v = 0; v < v1; v++) {
-            s.append(String.format("%d: ", v));
-            for (int w : adj[v]) {
-                s.append(String.format("%d ", w));
-            }
-            s.append(NEWLINE);
-        }
-        return s.toString();
-    }
-}
 
+}

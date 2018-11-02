@@ -24,7 +24,7 @@ public class SAP {
     }
     /**.
      * { function_description }
-     *
+     * time complexity is 1 in avg case
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
@@ -40,7 +40,7 @@ public class SAP {
     }
     /**.
      * { function_description }
-     *
+     * time complexity is O(N).
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
@@ -49,7 +49,7 @@ public class SAP {
     public int ancestor(final int v, final int w) {
         BreadthFirstSearch bfsv = new BreadthFirstSearch(dig, v);
         BreadthFirstSearch bfsw = new BreadthFirstSearch(dig, w);
-        for (int i = 0; i < dig.v1(); i++) {
+        for (int i = 0; i < dig.vert(); i++) {
             if (bfsv.hasPathTo(i) && bfsw.hasPathTo(i)) {
                 int vlen = bfsv.distTo(i);
                 int wlen = bfsw.distTo(i);
@@ -63,7 +63,7 @@ public class SAP {
     }
     /**.
      * { function_description }
-     *
+     * time complexity is 1 in avg case
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
@@ -79,7 +79,7 @@ public class SAP {
     }
     /**.
      * { function_description }
-     *
+     * time complexity is O(N^2)
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
@@ -93,4 +93,7 @@ public class SAP {
         }
         return ancestor;
     }
+
+    // do unit testing of this class
+    // public static void main(String[] args)
 }
