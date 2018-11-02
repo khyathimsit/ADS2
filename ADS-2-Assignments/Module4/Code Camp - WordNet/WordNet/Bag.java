@@ -12,46 +12,56 @@ import java.util.NoSuchElementException;
  * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
+    /**.
+     * { var_description }
+     */
     private Node<Item> first;
+    /**.
+     * { var_description }
+     */
     private int n;
-
-    // helper linked list class
+    /**.
+     * Class for node.
+     *
+     * @param      <Item>  The item
+     */
     private static class Node<Item> {
+        /**.
+         * { var_description }
+         */
         private Item item;
+        /**.
+         * { var_description }
+         */
         private Node<Item> next;
     }
-
-    /**
-     * Initializes an empty bag.
+    /**.
+     * Constructs the object.
      */
     public Bag() {
         first = null;
         n = 0;
     }
-
-    /**
-     * Returns true if this bag is empty.
+    /**.
+     * Determines if empty.
      *
-     * @return {@code true} if this bag is empty;
-     *         {@code false} otherwise
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return first == null;
     }
-
-    /**
-     * Returns the number of items in this bag.
+    /**.
+     * { function_description }
      *
-     * @return the number of items in this bag
+     * @return     { description_of_the_return_value }
      */
     public int size() {
         return n;
     }
-
-    /**
-     * Adds the item to this bag.
+    /**.
+     * { function_description }
      *
-     * @param  item the item to add to this bag
+     * @param      item  The item
      */
     public void add(Item item) {
         Node<Item> oldfirst = first;
@@ -60,30 +70,55 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
-
-
-    /**
-     * Returns an iterator that iterates over the items in this bag in arbitrary order.
+    /**.
+     * { function_description }
      *
-     * @return an iterator that iterates over the items in this bag in arbitrary order
+     * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
     }
-
-    // an iterator, doesn't implement remove() since it's optional
+    /**.
+     * Class for list iterator.
+     *
+     * @param      <Item>  The item
+     */
     private class ListIterator<Item> implements Iterator<Item> {
+        /**.
+         * { var_description }
+         */
         private Node<Item> current;
-
-        public ListIterator(Node<Item> first) {
+        /**.
+         * Constructs the object.
+         *
+         * @param      first  The first
+         */
+        public ListIterator(final Node<Item> first) {
             current = first;
         }
-
-        public boolean hasNext()  { return current != null;                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
-
+        /**.
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
+        public boolean hasNext() {
+            return current != null;
+        }
+        /**.
+         * { function_description }
+         */
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+        /**.
+         * { function_description }
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;
