@@ -5,6 +5,7 @@ import java.io.File;
 /**.
  * { item_description }
  */
+
 import java.util.Scanner;
 /**.
  * { item_description }
@@ -36,14 +37,16 @@ public class WordNet {
     private int ver = 0;
     /**.
      * Constructs the object.
-     *
-     * @param      syn    The synsets
-     * @param      hyper  The hypernyms
      * @throws     Exception  { exception_description }
+     * @param      synsets    The synsets
+     * @param      hypernyms  The hypernyms
      */
-    WordNet(final String syn, final String hyper) throws Exception {
-        readSynsets(syn);
-        readHypernyms(hyper);
+    WordNet(final String synsets, final String hypernyms) throws Exception {
+        readSynsets(synsets);
+        readHypernyms(hypernyms);
+        // dg = new Digraph(ver);
+        // readHypernyms(hypernyms);
+        // sap = new SAP(dg);
     }
     /**.
      * Reads synsets.
@@ -56,26 +59,26 @@ public class WordNet {
         htable = new HashTable<String, ArrayList<Integer>>();
         htable1 = new HashTable<Integer, String>();
         int id = 0;
-        Scanner synIn = new Scanner(new File(synsets));
-        while (synIn.hasNextLine()) {
-            ver++;
-            // String line = synIn.readString();
-            String[] tokens = synIn.nextLine().split(",");
-            id = Integer.parseInt(tokens[0]);
-            htable1.put(id, tokens[1]);
-            String[] word = tokens[1].split(" ");
-            for (int i = 0; i < word.length; i++) {
-                if (htable.contains(word[i])) {
-                     ArrayList<Integer> list = htable.get(word[i]);
-                    list.add(id);
-                    htable.put(word[i], list);
-                } else {
-                    ArrayList<Integer> list = new ArrayList<Integer>();
-                    list.add(Integer.parseInt(tokens[0]));
-                    htable.put(word[i], list);
+            Scanner synIn = new Scanner(new File(synsets));
+            while (synIn.hasNextLine()) {
+                ver++;
+                // String line = synIn.readString();
+                String[] tokens = synIn.nextLine().split(",");
+                id = Integer.parseInt(tokens[0]);
+                htable1.put(id, tokens[1]);
+                String[] word = tokens[1].split(" ");
+                for (int i = 0; i < word.length; i++) {
+                    if (htable.contains(word[i])) {
+                        ArrayList<Integer> list = htable.get(word[i]);
+                        list.add(id);
+                        htable.put(word[i], list);
+                    } else {
+                        ArrayList<Integer> list = new ArrayList<Integer>();
+                        list.add(Integer.parseInt(tokens[0]));
+                        htable.put(word[i], list);
+                    }
                 }
             }
-        }
     }
     /**.
      * Reads hypernyms.
@@ -92,7 +95,7 @@ public class WordNet {
             String[] tokens = hyperIn.nextLine().split(",");
             for (int i = 1; i < tokens.length; i++) {
                 dg.addEdge(Integer.parseInt(tokens[0]),
-                    Integer.parseInt(tokens[i]));
+                 Integer.parseInt(tokens[i]));
             }
         }
     }
