@@ -32,8 +32,8 @@ distance = 10, ancestor = entity
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
-	at SAP.ancestor(SAP.java:21)
-	at SAP.ancestor(SAP.java:48)
+	at SAP.ancestor(SAP.java:50)
+	at SAP.ancestor(SAP.java:91)
 	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
@@ -50,8 +50,8 @@ distance = 1, ancestor = animal_oil
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
-	at SAP.ancestor(SAP.java:21)
-	at SAP.ancestor(SAP.java:48)
+	at SAP.ancestor(SAP.java:50)
+	at SAP.ancestor(SAP.java:91)
 	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
@@ -65,8 +65,8 @@ distance = 2, ancestor = wax
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
-	at SAP.ancestor(SAP.java:21)
-	at SAP.ancestor(SAP.java:48)
+	at SAP.ancestor(SAP.java:50)
+	at SAP.ancestor(SAP.java:91)
 	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
@@ -82,8 +82,8 @@ distance = 0, ancestor = f
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
-	at SAP.ancestor(SAP.java:21)
-	at SAP.ancestor(SAP.java:48)
+	at SAP.ancestor(SAP.java:50)
+	at SAP.ancestor(SAP.java:91)
 	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
@@ -104,8 +104,8 @@ distance = 1, ancestor = k
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
-	at SAP.ancestor(SAP.java:21)
-	at SAP.ancestor(SAP.java:48)
+	at SAP.ancestor(SAP.java:50)
+	at SAP.ancestor(SAP.java:91)
 	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
@@ -123,8 +123,8 @@ distance = 1, ancestor = h
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
-	at SAP.ancestor(SAP.java:21)
-	at SAP.ancestor(SAP.java:48)
+	at SAP.ancestor(SAP.java:50)
+	at SAP.ancestor(SAP.java:91)
 	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
@@ -145,8 +145,8 @@ distance = 4, ancestor = f
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
-	at SAP.ancestor(SAP.java:21)
-	at SAP.ancestor(SAP.java:48)
+	at SAP.ancestor(SAP.java:50)
+	at SAP.ancestor(SAP.java:91)
 	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
@@ -231,8 +231,8 @@ distance = 8, ancestor = abstraction abstract_entity
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
-	at SAP.ancestor(SAP.java:21)
-	at SAP.ancestor(SAP.java:48)
+	at SAP.ancestor(SAP.java:50)
+	at SAP.ancestor(SAP.java:91)
 	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
