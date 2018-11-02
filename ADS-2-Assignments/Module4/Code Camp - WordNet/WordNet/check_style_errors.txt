@@ -225,17 +225,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 25 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:25:27: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:25:28: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:26:27: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:26:28: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:41:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:41:59: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:41:74: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:44:16: 'catch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:45:60: Empty statement. [EmptyStatement]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:41: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
@@ -271,37 +263,13 @@ Audit done.
 Checkstyle ends with 30 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:15: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:23: Using the '.*' form of import should be avoided - java.io.*. [AvoidStarImport]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:24: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:26: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:27:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:28:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:29:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:29:43: Variable 'htable' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:30:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:30:32: Variable 'htable1' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:31:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:33:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:33:13: Parameter synsets should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:33:29: Parameter hypernyms should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:40:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'readSynsets' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'readSynsets' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:40:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:40:29: Parameter synsets should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:66:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'readHypernyms' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'readHypernyms' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:66:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:66:31: Parameter hypernyms should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:72:16: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:73: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:77:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'display' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'display' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:77:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:94:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:94:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:94:25: Parameter nounA should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:94:39: Parameter nounB should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:100:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:100:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:100:23: Parameter nounA should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:100:37: Parameter nounB should be final. [FinalParameters]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:4: Using the '.*' form of import should be avoided - java.io.*. [AvoidStarImport]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:8: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:28:43: Variable 'htable' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:32:32: Variable 'htable1' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:43:66: Expected @throws tag for 'Exception'. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:47:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'readSynsets' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'readSynsets' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:47:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:85:16: 'for' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 9 errors.
