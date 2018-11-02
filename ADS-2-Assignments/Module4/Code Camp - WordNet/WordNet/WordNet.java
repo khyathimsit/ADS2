@@ -1,11 +1,11 @@
 /**.
  * { item_description }
  */
-import java.io.*;
+import java.io.File;
 /**.
  * { item_description }
  */
-import java.util.*;
+import java.util.Scanner;
 /**.
  * { item_description }
  */
@@ -25,11 +25,11 @@ public class WordNet {
     /**.
      * { item_description }
      */
-    HashTable<String, ArrayList<Integer>> htable;
+    private HashTable<String, ArrayList<Integer>> htable;
     /**.
      * { var_description }
      */
-    HashTable<Integer, String> htable1;
+    private HashTable<Integer, String> htable1;
     /**.
      * { var_description }
      */
@@ -37,13 +37,21 @@ public class WordNet {
     /**.
      * Constructs the object.
      *
-     * @param      synsets    The synsets
-     * @param      hypernyms  The hypernyms
+     * @param      syn    The synsets
+     * @param      hyper  The hypernyms
+     * @throws     Exception  { exception_description }
      */
-    WordNet(final String synsets, final String hypernyms) throws Exception {
-        readSynsets(synsets);
-        readHypernyms(hypernyms);
+    WordNet(final String syn, final String hyper) throws Exception {
+        readSynsets(syn);
+        readHypernyms(hyper);
     }
+    /**.
+     * Reads synsets.
+     *
+     * @param      synsets    The synsets
+     *
+     * @throws     Exception  { exception_description }
+     */
     public void readSynsets(final String synsets) throws Exception {
         htable = new HashTable<String, ArrayList<Integer>>();
         htable1 = new HashTable<Integer, String>();
@@ -82,7 +90,7 @@ public class WordNet {
         while (hyperIn.hasNextLine()) {
             // String line = ;
             String[] tokens = hyperIn.nextLine().split(",");
-            for(int i = 1; i < tokens.length; i++) {
+            for (int i = 1; i < tokens.length; i++) {
                 dg.addEdge(Integer.parseInt(tokens[0]),
                     Integer.parseInt(tokens[i]));
             }

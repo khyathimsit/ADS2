@@ -12,11 +12,11 @@ public class HashTable<Key, Value> {
     /**.
      * { var_description }
      */
-    private static final int hash = 0x7fffffff;
+    private static final int HASH_VAL = 0x7fffffff;
     /**.
      * { var_description }
      */
-    private static final int eight = 8;
+    private static final int NUM_EIGHT = 8;
     /**.
      * { var_description }
      */
@@ -88,7 +88,7 @@ public class HashTable<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private int hash(final Key key) {
-        return (key.hashCode() & hash) % m;
+        return (key.hashCode() & HASH_VAL) % m;
     }
     /**.
      * { function_description }
@@ -184,7 +184,7 @@ public class HashTable<Key, Value> {
             i = (i + 1) % m;
         }
         n--;
-        if (n > 0 && n <= m / eight) {
+        if (n > 0 && n <= m / NUM_EIGHT) {
             resize(m / 2);
         }
         assert check();
@@ -197,7 +197,9 @@ public class HashTable<Key, Value> {
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
         for (int i = 0; i < m; i++) {
-            if (keys[i] != null) queue.enqueue(keys[i]);
+            if (keys[i] != null) {
+                queue.enqueue(keys[i]);
+            }
         }
         return queue;
     }
@@ -207,7 +209,7 @@ public class HashTable<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private boolean check() {
-        if (m < 2*n) {
+        if (m < 2 * n) {
             System.err.println(
                 "Hash table size m = " + m + "; array size n = " + n);
             return false;

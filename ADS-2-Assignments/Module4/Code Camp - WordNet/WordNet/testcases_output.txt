@@ -20,7 +20,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:96)
+	at WordNet.display(WordNet.java:104)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -34,7 +34,7 @@ Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
 	at SAP.ancestor(SAP.java:21)
 	at SAP.ancestor(SAP.java:48)
-	at WordNet.sap(WordNet.java:134)
+	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
 
@@ -52,7 +52,7 @@ Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
 	at SAP.ancestor(SAP.java:21)
 	at SAP.ancestor(SAP.java:48)
-	at WordNet.sap(WordNet.java:134)
+	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
 
@@ -67,7 +67,7 @@ Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
 	at SAP.ancestor(SAP.java:21)
 	at SAP.ancestor(SAP.java:48)
-	at WordNet.sap(WordNet.java:134)
+	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
 
@@ -84,7 +84,7 @@ Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
 	at SAP.ancestor(SAP.java:21)
 	at SAP.ancestor(SAP.java:48)
-	at WordNet.sap(WordNet.java:134)
+	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
 
@@ -106,7 +106,7 @@ Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
 	at SAP.ancestor(SAP.java:21)
 	at SAP.ancestor(SAP.java:48)
-	at WordNet.sap(WordNet.java:134)
+	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
 
@@ -125,7 +125,7 @@ Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
 	at SAP.ancestor(SAP.java:21)
 	at SAP.ancestor(SAP.java:48)
-	at WordNet.sap(WordNet.java:134)
+	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
 
@@ -147,7 +147,7 @@ Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
 	at SAP.ancestor(SAP.java:21)
 	at SAP.ancestor(SAP.java:48)
-	at WordNet.sap(WordNet.java:134)
+	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
 
@@ -166,7 +166,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:96)
+	at WordNet.display(WordNet.java:104)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -177,7 +177,7 @@ Multiple roots
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:96)
+	at WordNet.display(WordNet.java:104)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -188,7 +188,7 @@ Multiple roots
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:96)
+	at WordNet.display(WordNet.java:104)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -233,7 +233,7 @@ Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at BreadthFirstSearch.<init>(BreadthFirstSearch.java:28)
 	at SAP.ancestor(SAP.java:21)
 	at SAP.ancestor(SAP.java:48)
-	at WordNet.sap(WordNet.java:134)
+	at WordNet.sap(WordNet.java:142)
 	at Solution.main(Solution.java:39)
 ----------------------------------------
 
@@ -244,7 +244,7 @@ Cycle detected
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
 	at DirectedCycle.<init>(DirectedCycle.java:27)
-	at WordNet.display(WordNet.java:96)
+	at WordNet.display(WordNet.java:104)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 

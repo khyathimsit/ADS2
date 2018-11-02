@@ -3,19 +3,11 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
-Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\HashTable.java:15:30: Name 'hash' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\HashTable.java:19:30: Name 'eight' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\HashTable.java:200: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\HashTable.java:210:18: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\HashTable.java:210:19: '*' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 5 errors.
+Starting audit...
+Audit done.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
@@ -82,20 +74,10 @@ Starting audit...
 Audit done.
 Checkstyle ends with 25 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Solution.java:41: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:4: Using the '.*' form of import should be avoided - java.io.*. [AvoidStarImport]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:8: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:28:43: Variable 'htable' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:32:32: Variable 'htable1' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:43:66: Expected @throws tag for 'Exception'. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:47:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'readSynsets' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'readSynsets' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:47:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:85:16: 'for' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.
