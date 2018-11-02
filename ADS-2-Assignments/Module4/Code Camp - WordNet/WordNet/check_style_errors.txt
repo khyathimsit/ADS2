@@ -1,10 +1,7 @@
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Bag.java:66:21: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Bag.java:96:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Bag.java:96:46: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:27:45: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\BreadthFirstSearch.java:31: 'for' construct must use '{}'s. [NeedBraces]
@@ -160,37 +157,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:28: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:29: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:30: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:37: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:50:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:51:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:54: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:55:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:56:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:90:22: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:105: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:120: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:127: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:137: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:140: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:142: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:149: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:150:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:152:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:152:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:152:29: Parameter first should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:152:40: 'first' hides a field. [HiddenField]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:156:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:160:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:164:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:165: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\Stack.java:167: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 30 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:4: Using the '.*' form of import should be avoided - java.io.*. [AvoidStarImport]
@@ -200,6 +168,6 @@ Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:43:66: Expected @throws tag for 'Exception'. [JavadocMethod]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:47:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'readSynsets' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'readSynsets' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:47:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:85:16: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module4\Code Camp - WordNet\WordNet\WordNet.java:85:16: 'for' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 9 errors.

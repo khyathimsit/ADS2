@@ -3,10 +3,6 @@
  */
 import java.util.Iterator;
 /**.
- * { item_description }
- */
-import java.util.NoSuchElementException;
-/**.
  * Class for bag.
  *
  * @param      <Item>  The item
@@ -15,17 +11,15 @@ public class Bag<Item> implements Iterable<Item> {
     /**.
      * { var_description }
      */
-    private Node<Item> first;
+    private int n;
     /**.
      * { var_description }
      */
-    private int n;
+    private Node first;
     /**.
      * Class for node.
-     *
-     * @param      <Item>  The item
      */
-    private static class Node<Item> {
+    private class Node {
         /**.
          * { var_description }
          */
@@ -33,79 +27,76 @@ public class Bag<Item> implements Iterable<Item> {
         /**.
          * { var_description }
          */
-        private Node<Item> next;
+        private Node next;
     }
-    /**.
-     * Constructs the object.
+
+   /**
+     * Create an empty stack.
      */
     public Bag() {
         first = null;
         n = 0;
     }
-    /**.
-     * Determines if empty.
-     *
-     * @return     True if empty, False otherwise.
-     */
+/**.
+ * Determines if empty.
+ *
+ * @return     True if empty, False otherwise.
+ * time complexity is 1
+ */
     public boolean isEmpty() {
         return first == null;
     }
-    /**.
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+/**.
+ * { function_description }
+ *
+ * @return     { description_of_the_return_value }
+ * time complexity is 1
+ */
     public int size() {
         return n;
     }
-    /**.
-     * { function_description }
-     *
-     * @param      item  The item
-     */
-    public void add(Item item) {
-        Node<Item> oldfirst = first;
-        first = new Node<Item>();
+/**.
+ * { function_description }
+ *
+ * @param      item  The item
+ * time complexity is 1
+ */
+    public void add(final Item item) {
+        Node oldfirst = first;
+        first = new Node();
         first.item = item;
         first.next = oldfirst;
         n++;
     }
-    /**.
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
+/**.
+ * { function_description }
+ *
+ * @return     { description_of_the_return_value }
+ * time complexity is 1
+ */
     public Iterator<Item> iterator()  {
-        return new ListIterator<Item>(first);
+        return new ListIterator();
     }
-    /**.
-     * Class for list iterator.
-     *
-     * @param      <Item>  The item
-     */
-    private class ListIterator<Item> implements Iterator<Item> {
+/**.
+ * Class for list iterator.
+ */
+    private class ListIterator implements Iterator<Item> {
         /**.
          * { var_description }
          */
-        private Node<Item> current;
-        /**.
-         * Constructs the object.
-         *
-         * @param      first  The first
-         */
-        public ListIterator(final Node<Item> first) {
-            current = first;
-        }
+        private Node current = first;
         /**.
          * Determines if it has next.
          *
          * @return     True if has next, False otherwise.
+         * time complexity is 1
          */
         public boolean hasNext() {
             return current != null;
         }
         /**.
          * { function_description }
+         * time complexity is 1
          */
         public void remove() {
             throw new UnsupportedOperationException();
@@ -114,14 +105,13 @@ public class Bag<Item> implements Iterable<Item> {
          * { function_description }
          *
          * @return     { description_of_the_return_value }
+         * time complexity is 1
          */
         public Item next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
             Item item = current.item;
             current = current.next;
             return item;
         }
     }
 }
+
