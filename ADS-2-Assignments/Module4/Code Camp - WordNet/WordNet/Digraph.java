@@ -5,16 +5,16 @@ public class Digraph {
     /**.
      * { var_description }
      */
-    private static final String NEWLINE = 
+    private static final String NEWLINE =
        System.getProperty("line.separator");
     /**.
      * { var_description }
      */
-    private final int V;
+    private final int v1;
     /**.
      * { var_description }
      */
-    private int E;
+    private int e;
     /**.
      * { var_description }
      */
@@ -26,35 +26,35 @@ public class Digraph {
     /**.
      * Constructs the object.
      *
-     * @param      V     { parameter_description }
+     * @param      v     { parameter_description }
      */
-    public Digraph(final int V) {
-        if (V < 0) {
+    public Digraph(final int v) {
+        if (v < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+        this.v1 = v;
+        this.e = 0;
+        indegree = new int[v1];
+        adj = (Bag<Integer>[]) new Bag[v1];
+        for (int l = 0; l < v1; l++) {
+            adj[l] = new Bag<Integer>();
         }
     }
     /**.
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      */
-    public Digraph(final Digraph G) {
-        this(G.V());
-        this.E = G.E();
-        for (int v = 0; v < V; v++) {
-            this.indegree[v] = G.indegree(v);
+    public Digraph(final Digraph g) {
+        this(g.v1());
+        this.e = g.e();
+        for (int v = 0; v < v1; v++) {
+            this.indegree[v] = g.indegree(v);
         }
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < g.v1(); v++) {
             Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : G.adj[v]) {
+            for (int w : g.adj[v]) {
                 reverse.push(w);
             }
             for (int w : reverse) {
@@ -67,16 +67,16 @@ public class Digraph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V() {
-        return V;
+    public int v1() {
+        return v1;
     }
     /**.
      * { function_description }
      *
      * @return     { description_of_the_return_value }
      */
-    public int E() {
-        return E;
+    public int e() {
+        return e;
     }
     /**.
      * { function_description }
@@ -84,9 +84,9 @@ public class Digraph {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= V) {
+        if (v < 0 || v >= v1) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V - 1));
+                "vertex " + v + " is not between 0 and " + (v1 - 1));
         }
     }
     /**.
@@ -100,7 +100,7 @@ public class Digraph {
         validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        e++;
     }
     /**.
      * { function_description }
@@ -141,8 +141,8 @@ public class Digraph {
      * @return     { description_of_the_return_value }
      */
     public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
+        Digraph reverse = new Digraph(v1);
+        for (int v = 0; v < v1; v++) {
             for (int w : adj(v)) {
                 reverse.addEdge(w, v);
             }
@@ -156,8 +156,8 @@ public class Digraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
+        s.append(v1 + " vertices, " + e + " edges " + NEWLINE);
+        for (int v = 0; v < v1; v++) {
             s.append(String.format("%d: ", v));
             for (int w : adj[v]) {
                 s.append(String.format("%d ", w));
