@@ -10,6 +10,7 @@ class PageRank {
      * { var_description }
      */
     private double[] prvalue;
+    private final int NUM_BER = 1000;
     /**.
      * Constructs the object.
      *
@@ -17,7 +18,7 @@ class PageRank {
      */
     PageRank(final Digraph d) {
         this.dig = d;
-        //int vertices = dig.vert(); 
+        //int vertices = dig.vert();
         prvalue = new double[dig.vert()];
         for (int i = 0; i < prvalue.length; i++) {
             prvalue[i] = 1 / dig.vert();
@@ -28,11 +29,11 @@ class PageRank {
      * Gets the pr.
      */
     public void getPR() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < NUM_BER; i++) {
             for (int j = 0; j < dig.vert(); j++) {
                 double result = 0.0;
-                for(int k : dig.adj(j)) {
-                    result += (prvalue[k]/dig.outdegree(k));
+                for (int k : dig.adj(j)) {
+                    result += (prvalue[k] / dig.outdegree(k));
                 }
                 prvalue[j] = result;
             }
