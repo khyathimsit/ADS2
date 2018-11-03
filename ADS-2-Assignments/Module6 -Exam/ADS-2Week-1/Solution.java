@@ -27,7 +27,6 @@ public class Solution {
 		}
 		//System.out.println(vertices + " vertices," + edges + " edges");
 		System.out.println(dg.toString());
-		System.out.println();
 		System.out.println(pr.toString());
 	}
 }
