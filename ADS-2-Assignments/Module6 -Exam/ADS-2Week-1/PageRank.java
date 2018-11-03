@@ -17,10 +17,10 @@ class PageRank {
 	 */
 	PageRank(final Digraph d) {
 		this.dig = d;
-		//int vertices = dig.V(); 
-		prvalue = new double[dig.V()];
+		//int vertices = dig.vert(); 
+		prvalue = new double[dig.vert()];
 		for (int i = 0; i < prvalue.length; i++) {
-			prvalue[i] = 1 / dig.V();
+			prvalue[i] = 1 / dig.vert();
 		}
 		getPR();
 	}
@@ -29,7 +29,7 @@ class PageRank {
 	 */
 	public void getPR() {
 		for (int i = 0; i < 1000; i++) {
-			for (int j = 0; j < dig.V(); j++) {
+			for (int j = 0; j < dig.vert(); j++) {
 				double result = 0.0;
 				for(int k : dig.adj(j)) {
 					result += (prvalue[k]/dig.outdegree(k));
@@ -41,7 +41,7 @@ class PageRank {
 
 	// public String toString() {
 	// 	StringBuilder s = new StringBuilder();
-	// 	for (int i = 0; i < dig.V(); i++) {
+	// 	for (int i = 0; i < dig.vert(); i++) {
 	// 		System.out.println(i + "-" + getPR(i));
 	// 	}
 	// }
