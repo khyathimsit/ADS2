@@ -1,7 +1,20 @@
+/**.
+ * Class for page rank.
+ */
 class PageRank {
+	/**.
+	 * { var_description }
+	 */
 	private Digraph dig;
-	
+	/**.
+	 * { var_description }
+	 */
 	private double[] prvalue;
+	/**.
+	 * Constructs the object.
+	 *
+	 * @param      d     { parameter_description }
+	 */
 	PageRank(final Digraph d) {
 		this.dig = d;
 		//int vertices = dig.V(); 
@@ -11,7 +24,9 @@ class PageRank {
 		}
 		getPR();
 	}
-
+	/**.
+	 * Gets the pr.
+	 */
 	public void getPR() {
 		for (int i = 0; i < 1000; i++) {
 			for (int j = 0; j < dig.V(); j++) {
