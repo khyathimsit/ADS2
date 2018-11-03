@@ -3,25 +3,18 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:20: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:31:37: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:34:36: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:35:62: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:35:63: '/' is not followed by whitespace. [WhitespaceAround]
-Audit done.
-Checkstyle ends with 6 errors.
-Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
-Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:8:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:32: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:35: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:31:29: '1000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:34:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:35:42: '/' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:35:43: '/' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 5 errors.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:8: Class Solution should be declared as final. [FinalClass]
+Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
