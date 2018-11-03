@@ -1,5 +1,6 @@
 class PageRank {
 	private Digraph dig;
+	
 	private double[] prvalue;
 	PageRank(final Digraph d) {
 		this.dig = d;
