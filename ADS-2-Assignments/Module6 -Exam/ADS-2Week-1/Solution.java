@@ -1,7 +1,5 @@
 
-// class PageRank {
-	
-// }
+
 
 // class WebSearch {
 
@@ -12,10 +10,11 @@ public class Solution {
 	Solution() {
 
 	}
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int vertices = sc.nextInt();
 		Digraph dg = new Digraph(vertices);
+		PageRank pr = new PageRank(dg);
 		int edges = 0;
 		while (sc.hasNextLine()) {
 			String[] tokens = sc.nextLine().split(" ");
@@ -28,5 +27,7 @@ public class Solution {
 		}
 		//System.out.println(vertices + " vertices," + edges + " edges");
 		System.out.println(dg.toString());
+		System.out.println();
+		System.out.println(pr.toString());
 	}
 }

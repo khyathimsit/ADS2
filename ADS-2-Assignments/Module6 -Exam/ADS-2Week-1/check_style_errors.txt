@@ -246,6 +246,20 @@ Starting audit...
 Audit done.
 Checkstyle ends with 141 errors.
 Starting audit...
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:2:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:3:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:6: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:14:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:15:37: '1000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:18:36: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:19:62: '/' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:19:63: '/' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 11 errors.
+Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Queue.java:9: Line has trailing spaces. [RegexpSingleline]
@@ -284,17 +298,15 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:3: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:11: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:11:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:12:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:15:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:15:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:26: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:29: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:9: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:9:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:10:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:13:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:25: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:28: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
