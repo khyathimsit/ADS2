@@ -19,20 +19,34 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int vertices = sc.nextInt();
+        int vertices = Integer.parseInt(sc.nextLine());
         Digraph dg = new Digraph(vertices);
-        PageRank pr = new PageRank(dg);
-        int edges = 0;
-        while (sc.hasNextLine()) {
-            String[] tokens = sc.nextLine().split(" ");
-            for (int i = 1; i < tokens.length; i++) {
-                dg.addEdge(Integer.parseInt(tokens[0]),
-                 Integer.parseInt(tokens[i]));
-                int e = dg.indegree(i);
-                edges += e;
+        Digraph dg1 = new Digraph(vertices);
+        //int edges = 0;
+        String[] tokens;
+        int ver = vertices;
+        while (ver > 0) {
+            tokens = sc.nextLine().split(" ");
+            if (tokens.length >= 2) {
+            	for (int i = 1; i < tokens.length; i++) {
+                	dg.addEdge(Integer.parseInt(tokens[0]),
+                 				Integer.parseInt(tokens[i]));
+                	dg1.addEdge(Integer.parseInt(tokens[0]),
+                 				Integer.parseInt(tokens[i]));
+                // int e = dg.indegree(i);
+                // edges += e;
+                }
+            } else {
+            	for (int j = 0; j < vertices; j++) {
+            		if (j != Integer.parseInt(tokens[0])) {
+            			dg1.addEdge(Integer.parseInt(tokens[0]),j);
+            		}
+            	}
             }
+            ver --;
         }
-        System.out.println(dg.toString());
-        System.out.println(pr.toString());
+        System.out.println(dg);
+        PageRank pr = new PageRank(dg1);
+        //System.out.println(pr.toString());
     }
 }

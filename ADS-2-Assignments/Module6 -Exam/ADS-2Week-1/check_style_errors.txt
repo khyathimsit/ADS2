@@ -3,15 +3,15 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:13:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\PageRank.java:13:23: Name 'NUM_BER' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:31:13: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:42:73: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module6 -Exam\ADS-2Week-1\Solution.java:46:16: '--' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.

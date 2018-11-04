@@ -5,6 +5,11 @@ public class Digraph {
     /**.
      * { var_description }
      */
+    private static final String NEWLINE =
+        System.getProperty("line.separator");
+    /**.
+     * { var_description }
+     */
     private int ver;
     /**.
      * { var_description }
@@ -123,5 +128,35 @@ public class Digraph {
     public int indegree(final int v) {
         return indegree[v];
     }
-
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Digraph reverse() {
+        Digraph reverse = new Digraph(ver);
+        for (int v = 0; v < ver; v++) {
+            for (int w : adj(v)) {
+                reverse.addEdge(w, v);
+            }
+        }
+        return reverse;
+    }
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append(ver + " vertices, " + edg + " edges " + NEWLINE);
+        for (int v = 0; v < ver; v++) {
+            s.append(String.format("%d: ", v));
+            for (int w : adj[v]) {
+                s.append(String.format("%d ", w));
+            }
+            s.append(NEWLINE);
+        }
+        return s.toString();
+    }
 }
