@@ -91,15 +91,16 @@ class PageRank {
         pr = new double[vertices];
         pr1 = new double[vertices];
         for (int i = 0; i < vertices; i++) {
-            pr[i] = (1 / vertices);
+            pr[i] = (1 / ((double) vertices));
         }
         Digraph revdigraph = dig.reverse();
         for (int i = 0; i < thousand; i++) {
             for (int j = 0; j < vertices; j++) {
                 result = 0.0;
+                // System.out.println("helloS");
                 for (int k : revdigraph.adj(j)) {
                     result += ((pr[k]) / ((double) (dig.outdegree(k))));
-                    System.out.println(result);
+                    // System.out.println(result);
                 }
 
                 pr1[j] = result;
