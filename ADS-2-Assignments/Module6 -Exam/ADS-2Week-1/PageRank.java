@@ -99,8 +99,9 @@ class PageRank {
                 result = 0.0;
                 for (int k : revdigraph.adj(j)) {
                     result += ((pr[k]) / ((double) (dig.outdegree(k))));
+                    System.out.println(result);
                 }
-                //System.out.println(result);
+
                 pr1[j] = result;
             }
             if (Arrays.equals(pr, pr1)) {
