@@ -28,25 +28,26 @@ public final class Solution {
         while (ver > 0) {
             tokens = sc.nextLine().split(" ");
             if (tokens.length >= 2) {
-            	for (int i = 1; i < tokens.length; i++) {
-                	dg.addEdge(Integer.parseInt(tokens[0]),
-                 				Integer.parseInt(tokens[i]));
-                	dg1.addEdge(Integer.parseInt(tokens[0]),
-                 				Integer.parseInt(tokens[i]));
+                for (int i = 1; i < tokens.length; i++) {
+                    dg.addEdge(Integer.parseInt(tokens[0]),
+                                Integer.parseInt(tokens[i]));
+                    dg1.addEdge(Integer.parseInt(tokens[0]),
+                                Integer.parseInt(tokens[i]));
                 // int e = dg.indegree(i);
                 // edges += e;
                 }
             } else {
-            	for (int j = 0; j < vertices; j++) {
-            		if (j != Integer.parseInt(tokens[0])) {
-            			dg1.addEdge(Integer.parseInt(tokens[0]),j);
-            		}
-            	}
+                for (int j = 0; j < vertices; j++) {
+                    if (j != Integer.parseInt(tokens[0])) {
+                        dg1.addEdge(Integer.parseInt(tokens[0]), j);
+                    }
+                }
             }
-            ver --;
+            ver--;
         }
         System.out.println(dg);
         PageRank pr = new PageRank(dg1);
         //System.out.println(pr.toString());
     }
 }
+
