@@ -32,8 +32,9 @@ public final class Solution {
             edge.addEdge(new Edge(Integer.parseInt(tokens[0]),
              Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2])));
         }
-        KruskalMST k = new KruskalMST(edge);
-        double res = k.weight();
+        //KruskalMST k = new KruskalMST(edge);
+        LazyPrimMST lazy =  new LazyPrimMST(edge);
+        double res = lazy.weight();
         System.out.format("%.5f", res);
     }
 }

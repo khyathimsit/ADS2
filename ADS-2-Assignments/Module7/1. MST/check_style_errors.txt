@@ -42,6 +42,10 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module7\1. MST\MinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module7\1. MST\MinPQ.java:259: Class HeapIterator should be declared as final. [FinalClass]
 Audit done.
