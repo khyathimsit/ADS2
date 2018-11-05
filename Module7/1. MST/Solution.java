@@ -1,5 +1,10 @@
+/**.
+ * { item_description }
+ */
 import java.util.Scanner;
-/**MINIMUMDISTANCE.**/
+/**.
+ * { item_description }
+ */
 final class Solution {
     /**
      * @brief [brief description]
@@ -29,5 +34,3 @@ final class Solution {
         System.out.format("%.5f", k.weight());
     }
 }
-
-

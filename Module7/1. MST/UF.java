@@ -30,7 +30,7 @@ public class UF {
     }
     /**.
      * Searches for the first match.
-     *
+     * Time complexity : O(n)
      * @param      l     { parameter_description }
      *
      * @return     { description_of_the_return_value }
@@ -46,7 +46,7 @@ public class UF {
     }
     /**.
      * Returns the number of components.
-     *
+     * Time complexity : O(1)
      * @return the number of components (between {@code 1} and {@code n})
      */
     public int count() {
@@ -59,6 +59,7 @@ public class UF {
      * @param  q the integer representing the other site
      * @return {@code true} if the two sites {@code p}
      *         {@code false} otherwise
+     * Time complexity : O(1)
      */
     public boolean connected(final int p, final int q) {
         return find(p) == find(q);
@@ -69,6 +70,7 @@ public class UF {
      *
      * @param  p the integer representing one site
      * @param  q the integer representing the other site
+     * Time complexity : O(1)
      */
     public void union(final int p, final int q) {
         int rootP = find(p);
@@ -90,6 +92,7 @@ public class UF {
      * { function_description }
      *
      * @param      p     { parameter_description }
+     * Time complexity : O(1)
      */
     private void validate(final int p) {
         int n = parent.length;

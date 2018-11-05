@@ -81,7 +81,7 @@ class EdgeWeightedGraph {
     }
     /**.
      * { function_description }
-     * TIME complexity is no of edges.
+     * TIME complexity is "no of edges".
      * @return     { description_of_the_return_value }
      */
     public Iterable<Edge> edges() {

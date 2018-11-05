@@ -9,17 +9,13 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\Module7\1. MST\Kruskals.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\Module7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\Module7\1. MST\MinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\Module7\1. MST\Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\user\Desktop\ADS2\Module7\1. MST\Queue.java:9: Line has trailing spaces. [RegexpSingleline]

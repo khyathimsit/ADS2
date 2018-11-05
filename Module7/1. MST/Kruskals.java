@@ -16,7 +16,7 @@ class Kruskals {
     private double weight;
     /**.
      * Constructs the object.
-     * TIME complexity in average case is E log E.
+     * TIME complexity in average case is ElogE.
      * @param      ewg   The ewg
      */
     Kruskals(final EdgeWeightedGraph ewg) {
