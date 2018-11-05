@@ -34,3 +34,4 @@ final class Solution {
         System.out.format("%.5f", k.weight());
     }
 }
+
