@@ -238,8 +238,14 @@ Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:23:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:23:30: Parameter x should be final. [FinalParameters]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:23:37: Parameter y should be final. [FinalParameters]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:25:32: '1000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:27: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:28: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:30:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:30:40: Parameter c1 should be final. [FinalParameters]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:30:50: Parameter c2 should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 22 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
