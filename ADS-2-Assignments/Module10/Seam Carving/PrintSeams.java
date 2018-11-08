@@ -30,23 +30,39 @@
  *  Total energy = 2530.681960
  *
  ******************************************************************************/
-
 import edu.princeton.cs.algs4.Picture;
+/**.
+ * { item_description }
+ */
 import edu.princeton.cs.algs4.StdOut;
-
+/**.
+ * Class for print seams.
+ */
 public class PrintSeams {
-    private static final boolean HORIZONTAL   = true;
-    private static final boolean VERTICAL     = false;
-
-    private static void printSeam(SeamCarver carver, int[] seam, boolean direction) {
+    /**.
+     * { var_description }
+     */
+    private static final boolean HORIZONTAL = true;
+    /**.
+     * { var_description }
+     */
+    private static final boolean VERTICAL = false;
+    /**.
+     * { function_description }
+     *
+     * @param      carver     The carver
+     * @param      seam       The seam
+     * @param      direction  The direction
+     */
+    private static void printSeam(final SeamCarver carver,
+        final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
-
         for (int row = 0; row < carver.height(); row++) {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
                 String marker = " ";
-                if ((direction == HORIZONTAL && row == seam[col]) ||
-                    (direction == VERTICAL   && col == seam[row])) {
+                if ((direction == HORIZONTAL && row == seam[col])
+                    || (direction == VERTICAL && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -59,31 +75,34 @@ public class PrintSeams {
         StdOut.println();
         StdOut.println();
     }
-
-    public static void main(String[] args) {
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
-        StdOut.printf("%s (%d-by-%d image)\n", args[0], picture.width(), picture.height());
+        StdOut.printf("%s (%d-by-%d image)\n",
+            args[0], picture.width(), picture.height());
         StdOut.println();
-        StdOut.println("The table gives the dual-gradient energies of each pixel.");
-        StdOut.println("The asterisks denote a minimum energy vertical or horizontal seam.");
+        StdOut.println(
+            "The table gives the dual-gradient energies of each pixel.");
+        StdOut.println(
+        "The asterisks denote a minimum energy vertical or horizontal seam.");
         StdOut.println();
-
-        SeamCarver carver = new SeamCarver(picture);
-        
+        SeamCarver carver = new SeamCarver(picture); 
         StdOut.printf("Vertical seam: { ");
         int[] verticalSeam = carver.findVerticalSeam();
         for (int x : verticalSeam)
             StdOut.print(x + " ");
         StdOut.println("}");
         printSeam(carver, verticalSeam, VERTICAL);
-
         StdOut.printf("Horizontal seam: { ");
         int[] horizontalSeam = carver.findHorizontalSeam();
-        for (int y : horizontalSeam)
+        for (int y : horizontalSeam) {
             StdOut.print(y + " ");
+        }
         StdOut.println("}");
         printSeam(carver, horizontalSeam, HORIZONTAL);
-
     }
-
 }
