@@ -10,6 +10,10 @@ public class SeamCarver {
      * { var_description }
      */
     private Picture picture;
+    /**.
+     * { var_description }
+     */
+    private static final int THOUSAND = 1000;
     // create a seam carver object based on the given picture
     /**.
      * Constructs the object.
@@ -61,7 +65,7 @@ public class SeamCarver {
      */
     public double energy(final int x, final int y) {
         if (x == 0 || x == width() - 1 || y == 0 || y == height() - 1) {
-            return 1000;
+            return THOUSAND;
         }
         return Math.sqrt(calculatesquare(picture.get(x - 1, y),
             picture.get(x + 1, y)) + calculatesquare(
@@ -106,8 +110,8 @@ public class SeamCarver {
      *
      * @return     { description_of_the_return_value }
      */
-    public void removeHorizontalSeam(int[] seam) {
-
+    public void removeHorizontalSeam(final int[] seam) {
+        return;
     }
     // remove vertical seam from current picture
     /**.
@@ -115,7 +119,7 @@ public class SeamCarver {
      *
      * @return     { description_of_the_return_value }
      */
-    public void removeVerticalSeam(int[] seam) {
-
+    public void removeVerticalSeam(final int[] seam) {
+        return;
     }
 }

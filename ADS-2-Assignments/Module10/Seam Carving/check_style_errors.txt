@@ -196,22 +196,16 @@ Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:64:20: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:107: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:109:38: Parameter seam should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:109:44: Expected @param tag for 'seam'. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:116: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:118:36: Parameter seam should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:118:42: Expected @param tag for 'seam'. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:111: Unused Javadoc tag. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:113:50: Expected @param tag for 'seam'. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:120: Unused Javadoc tag. [JavadocMethod]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SeamCarver.java:122:48: Expected @param tag for 'seam'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ShowEnergy.java:19:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ShowEnergy.java:29: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ShowSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ShowSeams.java:6: Line has trailing spaces. [RegexpSingleline]
