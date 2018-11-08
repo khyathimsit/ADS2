@@ -13,20 +13,20 @@
  *  The asterisks denote a minimum energy vertical or horizontal seam.
  *
  *  Vertical seam: { 3 4 3 2 1 }
- *  1000.00  1000.00  1000.00  1000.00* 1000.00  1000.00  
- *  1000.00   237.35   151.02   234.09   107.89* 1000.00  
- *  1000.00   138.69   228.10   133.07*  211.51  1000.00  
- *  1000.00   153.88   174.01*  284.01   194.50  1000.00  
- *  1000.00  1000.00* 1000.00  1000.00  1000.00  1000.00  
+ *  1000.00  1000.00  1000.00  1000.00* 1000.00  1000.00
+ *  1000.00   237.35   151.02   234.09   107.89* 1000.00
+ *  1000.00   138.69   228.10   133.07*  211.51  1000.00
+ *  1000.00   153.88   174.01*  284.01   194.50  1000.00
+ *  1000.00  1000.00* 1000.00  1000.00  1000.00  1000.00
  *  Total energy = 2414.973496
- *  
- *  
+ *
+ *
  *  Horizontal seam: { 2 2 1 2 1 2 }
- *  1000.00  1000.00  1000.00  1000.00  1000.00  1000.00 
- *  1000.00   237.35   151.02*  234.09   107.89* 1000.00  
- *  1000.00*  138.69*  228.10   133.07*  211.51  1000.00*  
- *  1000.00   153.88   174.01   284.01   194.50  1000.00  
- *  1000.00  1000.00  1000.00  1000.00  1000.00  1000.00  
+ *  1000.00  1000.00  1000.00  1000.00  1000.00  1000.00
+ *  1000.00   237.35   151.02*  234.09   107.89* 1000.00
+ *  1000.00*  138.69*  228.10   133.07*  211.51  1000.00*
+ *  1000.00   153.88   174.01   284.01   194.50  1000.00
+ *  1000.00  1000.00  1000.00  1000.00  1000.00  1000.00
  *  Total energy = 2530.681960
  *
  ******************************************************************************/
@@ -47,6 +47,14 @@ public class PrintSeams {
      * { var_description }
      */
     private static final boolean VERTICAL = false;
+    /**.
+     * Constructs the object.
+     */
+    private PrintSeams() {
+        /**.
+         * { item_description }
+         */
+    }
     /**.
      * { function_description }
      *
@@ -69,7 +77,7 @@ public class PrintSeams {
                 StdOut.printf("%7.2f%s ", energy, marker);
             }
             StdOut.println();
-        }                
+        }
         // StdOut.println();
         StdOut.printf("Total energy = %f\n", totalSeamEnergy);
         StdOut.println();
@@ -90,11 +98,12 @@ public class PrintSeams {
         StdOut.println(
         "The asterisks denote a minimum energy vertical or horizontal seam.");
         StdOut.println();
-        SeamCarver carver = new SeamCarver(picture); 
+        SeamCarver carver = new SeamCarver(picture);
         StdOut.printf("Vertical seam: { ");
         int[] verticalSeam = carver.findVerticalSeam();
-        for (int x : verticalSeam)
+        for (int x : verticalSeam) {
             StdOut.print(x + " ");
+        }
         StdOut.println("}");
         printSeam(carver, verticalSeam, VERTICAL);
         StdOut.printf("Horizontal seam: { ");

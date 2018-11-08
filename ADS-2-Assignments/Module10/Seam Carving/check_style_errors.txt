@@ -112,29 +112,13 @@ Audit done.
 Checkstyle ends with 109 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:16: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:17: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:18: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:19: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:20: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:22: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:23: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:25: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:26: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:27: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:28: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:29: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:41:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:72: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:93: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:96: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:41: Class PrintSeams should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:38: Line is longer than 80 characters (found 113). [LineLength]
