@@ -8,11 +8,19 @@
  ******************************************************************************/
 
 import java.io.OutputStreamWriter;
+/**.
+ * { item_description }
+ */
 import java.io.PrintWriter;
+/**.
+ * { item_description }
+ */
 import java.io.UnsupportedEncodingException;
+/**.
+ * { item_description }
+ */
 import java.util.Locale;
-
-/**
+/**.
  *  This class provides methods for printing strings and numbers to standard output.
  *  <p>
  *  <b>Getting started.</b>
@@ -60,249 +68,225 @@ import java.util.Locale;
  *  @author Kevin Wayne
  */
 public final class StdOut {
-
-    // force Unicode UTF-8 encoding; otherwise it's system dependent
+    /**.
+     * { var_description }
+     */
     private static final String CHARSET_NAME = "UTF-8";
-
-    // assume language = English, country = US for consistency with StdIn
+    /**.
+     * { var_description }
+     */
     private static final Locale LOCALE = Locale.US;
-
-    // send output here
+    /**.
+     * { var_description }
+     */
     private static PrintWriter out;
-
-    // this is called before invoking any methods
+    /**.
+     * { item_description }
+     */
     static {
         try {
-            out = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME), true);
+            out = new PrintWriter(new
+                OutputStreamWriter(System.out, CHARSET_NAME), true);
         }
         catch (UnsupportedEncodingException e) {
             System.out.println(e);
         }
     }
-
-    // don't instantiate
-    private StdOut() { }
-
-   /**
-     * Closes standard output.
-     * @deprecated Calling close() permanently disables standard output;
-     *             subsequent calls to StdOut.println() or System.out.println()
-     *             will no longer produce output on standard output.
+    /**.
+     * Constructs the object.
      */
-    @Deprecated
+    private StdOut() { }
+   /**.
+    * { function_description }
+    */
     public static void close() {
         out.close();
     }
-
-   /**
-     * Terminates the current line by printing the line-separator string.
+    /**.
+     * { function_description }
      */
     public static void println() {
         out.println();
     }
-
-   /**
-     * Prints an object to this output stream and then terminates the line.
+    /**.
+     * { function_description }
      *
-     * @param x the object to print
+     * @param      x     { parameter_description }
      */
-    public static void println(Object x) {
+    public static void println(final Object x) {
         out.println(x);
     }
-
-   /**
-     * Prints a boolean to standard output and then terminates the line.
+    /**.
+     * { function_description }
      *
-     * @param x the boolean to print
+     * @param      x     { parameter_description }
      */
-    public static void println(boolean x) {
+    public static void println(final boolean x) {
         out.println(x);
     }
-
-   /**
-     * Prints a character to standard output and then terminates the line.
+    /**.
+     * { function_description }
      *
-     * @param x the character to print
+     * @param      x     { parameter_description }
      */
-    public static void println(char x) {
+    public static void println(final char x) {
         out.println(x);
     }
-
-   /**
-     * Prints a double to standard output and then terminates the line.
+    /**.
+     * { function_description }
      *
-     * @param x the double to print
+     * @param      x     { parameter_description }
      */
-    public static void println(double x) {
+    public static void println(final double x) {
         out.println(x);
     }
-
-   /**
-     * Prints an integer to standard output and then terminates the line.
+    /**.
+     * { function_description }
      *
-     * @param x the integer to print
+     * @param      x     { parameter_description }
      */
-    public static void println(float x) {
+    public static void println(final float x) {
         out.println(x);
     }
-
-   /**
-     * Prints an integer to standard output and then terminates the line.
+    /**.
+     * { function_description }
      *
-     * @param x the integer to print
+     * @param      x     { parameter_description }
      */
-    public static void println(int x) {
+    public static void println(final int x) {
         out.println(x);
     }
-
-   /**
-     * Prints a long to standard output and then terminates the line.
+    /**.
+     * { function_description }
      *
-     * @param x the long to print
+     * @param      x     { parameter_description }
      */
-    public static void println(long x) {
+    public static void println(final long x) {
         out.println(x);
     }
-
-   /**
-     * Prints a short integer to standard output and then terminates the line.
+    /**.
+     * { function_description }
      *
-     * @param x the short to print
+     * @param      x     { parameter_description }
      */
-    public static void println(short x) {
+    public static void println(final short x) {
         out.println(x);
     }
-
-   /**
-     * Prints a byte to standard output and then terminates the line.
-     * <p>
-     * To write binary data, see {@link BinaryStdOut}.
+    /**.
+     * { function_description }
      *
-     * @param x the byte to print
+     * @param      x     { parameter_description }
      */
-    public static void println(byte x) {
+    public static void println(final byte x) {
         out.println(x);
     }
-
-   /**
-     * Flushes standard output.
+    /**.
+     * { function_description }
      */
     public static void print() {
         out.flush();
     }
-
-   /**
-     * Prints an object to standard output and flushes standard output.
-     * 
-     * @param x the object to print
-     */
-    public static void print(Object x) {
-        out.print(x);
-        out.flush();
-    }
-
-   /**
-     * Prints a boolean to standard output and flushes standard output.
-     * 
-     * @param x the boolean to print
-     */
-    public static void print(boolean x) {
-        out.print(x);
-        out.flush();
-    }
-
-   /**
-     * Prints a character to standard output and flushes standard output.
-     * 
-     * @param x the character to print
-     */
-    public static void print(char x) {
-        out.print(x);
-        out.flush();
-    }
-
-   /**
-     * Prints a double to standard output and flushes standard output.
-     * 
-     * @param x the double to print
-     */
-    public static void print(double x) {
-        out.print(x);
-        out.flush();
-    }
-
-   /**
-     * Prints a float to standard output and flushes standard output.
-     * 
-     * @param x the float to print
-     */
-    public static void print(float x) {
-        out.print(x);
-        out.flush();
-    }
-
-   /**
-     * Prints an integer to standard output and flushes standard output.
-     * 
-     * @param x the integer to print
-     */
-    public static void print(int x) {
-        out.print(x);
-        out.flush();
-    }
-
-   /**
-     * Prints a long integer to standard output and flushes standard output.
-     * 
-     * @param x the long integer to print
-     */
-    public static void print(long x) {
-        out.print(x);
-        out.flush();
-    }
-
-   /**
-     * Prints a short integer to standard output and flushes standard output.
-     * 
-     * @param x the short integer to print
-     */
-    public static void print(short x) {
-        out.print(x);
-        out.flush();
-    }
-
-   /**
-     * Prints a byte to standard output and flushes standard output.
+    /**.
+     * { function_description }
      *
-     * @param x the byte to print
+     * @param      x     { parameter_description }
      */
-    public static void print(byte x) {
+    public static void print(final Object x) {
         out.print(x);
         out.flush();
     }
-
-   /**
-     * Prints a formatted string to standard output, using the specified format
-     * string and arguments, and then flushes standard output.
+    /**.
+     * { function_description }
      *
-     *
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
-     * @param args   the arguments accompanying the format string
+     * @param      x     { parameter_description }
      */
-    public static void printf(String format, Object... args) {
+    public static void print(final boolean x) {
+        out.print(x);
+        out.flush();
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     */
+    public static void print(final char x) {
+        out.print(x);
+        out.flush();
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     */
+    public static void print(final double x) {
+        out.print(x);
+        out.flush();
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     */
+    public static void print(final float x) {
+        out.print(x);
+        out.flush();
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     */
+    public static void print(final int x) {
+        out.print(x);
+        out.flush();
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     */
+    public static void print(final long x) {
+        out.print(x);
+        out.flush();
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     */
+    public static void print(final short x) {
+        out.print(x);
+        out.flush();
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     */
+    public static void print(final byte x) {
+        out.print(x);
+        out.flush();
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      format  The format
+     * @param      args    The arguments
+     */
+    public static void printf(final String format,
+        final Object... args) {
         out.printf(LOCALE, format, args);
         out.flush();
     }
-
-   /**
-     * Prints a formatted string to standard output, using the locale and
-     * the specified format string and arguments; then flushes standard output.
+    /**.
+     * { function_description }
      *
-     * @param locale the locale
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
-     * @param args   the arguments accompanying the format string
+     * @param      locale  The locale
+     * @param      format  The format
+     * @param      args    The arguments
      */
-    public static void printf(Locale locale, String format, Object... args) {
+    public static void printf(final Locale locale,
+        final String format, final Object... args) {
         out.printf(locale, format, args);
         out.flush();
     }
