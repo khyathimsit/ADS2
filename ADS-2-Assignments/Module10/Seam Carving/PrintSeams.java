@@ -38,7 +38,7 @@ import edu.princeton.cs.algs4.StdOut;
 /**.
  * Class for print seams.
  */
-public class PrintSeams {
+public final class PrintSeams {
     /**.
      * { var_description }
      */
@@ -115,3 +115,4 @@ public class PrintSeams {
         printSeam(carver, horizontalSeam, HORIZONTAL);
     }
 }
+
