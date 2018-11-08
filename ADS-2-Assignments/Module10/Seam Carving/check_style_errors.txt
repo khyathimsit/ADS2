@@ -113,11 +113,8 @@ Checkstyle ends with 109 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintEnergy.java:8: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintEnergy.java:9: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintEnergy.java:11:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\PrintSeams.java:16: Line has trailing spaces. [RegexpSingleline]
@@ -140,14 +137,9 @@ Audit done.
 Checkstyle ends with 17 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:24:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:31:28: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:32: Line is longer than 80 characters (found 113). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:37: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:53:42: '+' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\ResizeDemo.java:38: Line is longer than 80 characters (found 113). [LineLength]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SCUtility.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module10\Seam Carving\SCUtility.java:15: Missing a Javadoc comment. [JavadocType]
