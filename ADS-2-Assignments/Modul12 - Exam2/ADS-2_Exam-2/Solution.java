@@ -49,7 +49,7 @@ public final class Solution {
         case "ViaPaths":
             String[] line = sc.nextLine().split(" ");
             Dijkstra dij = new Dijkstra(e, Integer.parseInt(line[0]));
-            double dist = dij.distTo(Integer.parseInt(line[2]));
+            double dist = dij.distTo(Integer.parseInt(line[1]));
             Dijkstra dij1 = new Dijkstra(e, Integer.parseInt(line[1]));
             double dist1 = dij1.distTo(Integer.parseInt(line[2]));
             double res = dist + dist1;
