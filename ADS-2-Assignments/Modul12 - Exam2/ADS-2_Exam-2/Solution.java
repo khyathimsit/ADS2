@@ -8,10 +8,10 @@ public final class Solution {
 		int vertices = sc.nextInt();
 		EdgeWeightedGraph e = new EdgeWeightedGraph(vertices);
 		int edges = sc.nextInt();
-		String[] tokens;
         int ver = vertices;
-        while (ver > 0) {
-        	tokens = sc.nextLine().split(" ");
+        sc.nextLine();
+        for (int i = 0; i < ver; i++) {
+        	String[] tokens = sc.nextLine().split(" ");
         	e.addEdge(new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2])));
         }
 		String caseToGo = sc.nextLine();

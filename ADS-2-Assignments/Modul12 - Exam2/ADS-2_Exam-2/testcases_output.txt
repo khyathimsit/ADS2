@@ -9,11 +9,13 @@ Expected Output:
 5:
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:15)
+6 vertices, 6 edges 
+0: Edge@3a03464  Edge@2d3fcdbd  
+1: Edge@617c74e5  Edge@6537cf78  Edge@2d3fcdbd  
+2: Edge@67b6d4ae  Edge@34b7bfc0  Edge@617c74e5  
+3: Edge@34b7bfc0  Edge@3a03464  
+4: Edge@67b6d4ae  Edge@6537cf78  
+5:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -31,11 +33,7 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:15)
+
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -43,11 +41,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:15)
+
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -55,11 +49,7 @@ Expected Output:
 370.0
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:15)
+
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -67,11 +57,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:15)
+
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -80,10 +66,6 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:15)
+
 ----------------------------------------
 
