@@ -20,12 +20,16 @@ public final class Solution {
 		    System.out.println(e);
 			break;
 
-		// case "DirectedPaths":
-		// 	// Handle the case of DirectedPaths, where two integers are given.
-		// 	// First is the source and second is the destination.
-		// 	// If the path exists print the distance between them.
-		// 	// Other wise print "No Path Found."
-		// 	break;
+		case "DirectedPaths":
+			String[] tokens = sc.nextLine().split(" ");
+			Dijkstra d = new Dijkstra(e, Integer.parseInt(tokens[0]));
+			double distance = d.distTo(Integer.parseInt(tokens[1]));
+			if (!d.hasPathTo(Integer.parseInt(tokens[0]))) {
+            	System.out.println("No Path Found.");
+            } else {
+            	System.out.println(distance);
+            }
+			break;
 
 		// case "ViaPaths":
 		// 	// Handle the case of ViaPaths, where three integers are given.
