@@ -38,17 +38,17 @@ public final class Solution {
 			// Dijkstra dij1 = new Dijkstra(e, Integer.parseInt(line[1]));
 			// double dist1 = dij1.distTo(Integer.parseInt(line[2]));
 			// double res = dist + dist1;
-			// if (!dij.hasPathTo(Integer.parseInt(line[1]))) {
-            //System.out.println("No Path Found.");
-			//}
-			if (dist == -1.0) {
-				System.out.println("No Path Found.");
-            } else {
+			if (!dij.hasPathTo(Integer.parseInt(line[2]))) {
+            	System.out.println("No Path Found.");
+			}
+			// if (dist == -1.0) {
+			// 	System.out.println("No Path Found.");
+           //} 
+			else {
             	System.out.println(dist);
             }
 			break;
-
-		default:
+			default:
 			break;
 		}
 
