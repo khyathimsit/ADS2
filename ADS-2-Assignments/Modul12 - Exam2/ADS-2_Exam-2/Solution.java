@@ -58,10 +58,10 @@ public final class Solution {
 
             double res = dist + dist1;
 
-            if (dij.hasPathTo(Integer.parseInt(line[2]))) {
-                System.out.println(res);
-                //String s = line[0] + " ";
-                System.out.println("hiiiiii....");
+            if (!dij.hasPathTo(Integer.parseInt(line[2]))) {
+            	System.out.println("No Path Found.");
+            } else {
+            	System.out.println(res);
                 for (Edge edge : dij.pathTo(Integer.parseInt(line[1]))) {
                     s += edge.either() + " ";
                     System.out.println("helo....");
@@ -80,8 +80,6 @@ public final class Solution {
                     via = temp;
                 }
                 System.out.println(s);
-            } else {
-                System.out.println("No Path Found.");
             }
             break;
             default:
