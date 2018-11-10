@@ -59,7 +59,7 @@ public final class Solution {
                 //System.out.println("hiiiiii....");
                 for (Edge edge : dij.pathTo(Integer.parseInt(line[1]))) {
                     s += edge.either() + " ";
-                    //System.out.println("helloooo");
+                    System.out.println("helloooo");
                 }
                 int via = Integer.parseInt(line[1]);
                 for (Edge edge : dij1.pathTo(Integer.parseInt(line[2]))) {
