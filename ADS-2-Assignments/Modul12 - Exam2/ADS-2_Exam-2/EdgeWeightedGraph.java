@@ -5,10 +5,6 @@ class EdgeWeightedGraph {
     /**.
      * { var_description }
      */
-    //private static final String NEWLINE = System.getProperty("line.separator");
-    /**.
-     * { var_description }
-     */
     private int ver;
     /**.
      * { var_description }
@@ -105,7 +101,11 @@ class EdgeWeightedGraph {
         }
         return list;
     }
-
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(ver + " vertices " + edg + " edges" + "\n");

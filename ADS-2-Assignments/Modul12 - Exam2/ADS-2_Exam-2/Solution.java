@@ -55,6 +55,7 @@ public final class Solution {
             double res = dist + dist1;
             if (dij.hasPathTo(Integer.parseInt(line[2]))) {
                 System.out.println(res);
+                
             } else {
                 System.out.println("No Path Found.");
             }
