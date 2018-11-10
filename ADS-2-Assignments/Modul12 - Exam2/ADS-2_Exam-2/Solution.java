@@ -56,9 +56,10 @@ public final class Solution {
             if (dij.hasPathTo(Integer.parseInt(line[2]))) {
                 System.out.println(res);
                 String s = "";
-                System.out.println("hiiiiii....");
+                //System.out.println("hiiiiii....");
                 for (Edge edge : dij.pathTo(Integer.parseInt(line[1]))) {
                     s += edge.either() + " ";
+                    System.out.println("helloooo");
                 }
                 int via = Integer.parseInt(line[1]);
                 for (Edge edge : dij1.pathTo(Integer.parseInt(line[2]))) {
