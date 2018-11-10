@@ -55,7 +55,22 @@ public final class Solution {
             double res = dist + dist1;
             if (dij.hasPathTo(Integer.parseInt(line[2]))) {
                 System.out.println(res);
-                
+                String s = "";
+                for (Edge edge : dij.pathTo(Integer.parseInt(line[1]))) {
+                    s += edge.either() + " ";
+                }
+                int via = Integer.parseInt(line[1]);
+                for (Edge edge : dij1.pathTo(Integer.parseInt(line[2]))) {
+                    int temp = edge.either();
+                    if (via == temp) {
+                        s += edge.other(temp) + " ";
+                    } else {
+                        s += temp + " ";
+                    }
+                    via = temp;
+                }
+                System.out.println(s);
+
             } else {
                 System.out.println("No Path Found.");
             }
