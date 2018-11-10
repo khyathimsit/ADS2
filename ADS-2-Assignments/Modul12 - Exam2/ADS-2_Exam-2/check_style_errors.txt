@@ -31,10 +31,12 @@ Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Edge.java:83:5: Class 'Edge' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Edge' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Edge.java:83:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\EdgeWeightedGraph.java:8: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\EdgeWeightedGraph.java:109:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 2 errors.
