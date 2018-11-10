@@ -48,18 +48,23 @@ public final class Solution {
 
         case "ViaPaths":
             String[] line = sc.nextLine().split(" ");
+            String s = line[0] + " ";
+
             Dijkstra dij = new Dijkstra(e, Integer.parseInt(line[0]));
             double dist = dij.distTo(Integer.parseInt(line[1]));
+
             Dijkstra dij1 = new Dijkstra(e, Integer.parseInt(line[1]));
             double dist1 = dij1.distTo(Integer.parseInt(line[2]));
+
             double res = dist + dist1;
+
             if (dij.hasPathTo(Integer.parseInt(line[2]))) {
                 System.out.println(res);
-                String s = line[0] + " ";
+                //String s = line[0] + " ";
                 //System.out.println("hiiiiii....");
                 for (Edge edge : dij.pathTo(Integer.parseInt(line[1]))) {
                     s += edge.either() + " ";
-                    System.out.println("helloooo");
+                    //System.out.println("helloooo");
                 }
                 int via = Integer.parseInt(line[1]);
                 for (Edge edge : dij1.pathTo(Integer.parseInt(line[2]))) {
