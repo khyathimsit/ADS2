@@ -46,9 +46,9 @@ Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:15: Line is longer than 80 characters (found 125). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:25: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:32: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:14: Line is longer than 80 characters (found 125). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:24: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:31: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Modul12 - Exam2\ADS-2_Exam-2\Solution.java:32: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 11 errors.

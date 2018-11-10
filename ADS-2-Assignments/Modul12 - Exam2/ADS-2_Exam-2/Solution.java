@@ -8,9 +8,8 @@ public final class Solution {
 		int vertices = sc.nextInt();
 		EdgeWeightedGraph e = new EdgeWeightedGraph(vertices);
 		int edges = sc.nextInt();
-        int ver = vertices;
         sc.nextLine();
-        for (int i = 0; i < ver; i++) {
+        for (int i = 0; i < edges; i++) {
         	String[] tokens = sc.nextLine().split(" ");
         	e.addEdge(new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2])));
         }
