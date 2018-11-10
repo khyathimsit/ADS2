@@ -34,9 +34,12 @@ public final class Solution {
 		case "ViaPaths":
 			String[] line = sc.nextLine().split(" ");
 			Dijkstra dij = new Dijkstra(e, Integer.parseInt(line[0]));
-			double dist = dij.distTo(Integer.parseInt(line[1]));
-			if (!dij.hasPathTo(Integer.parseInt(line[1]))) {
-            	System.out.println("No Path Found.");
+			double dist = dij.distTo(Integer.parseInt(line[2]));
+			// if (!dij.hasPathTo(Integer.parseInt(line[1]))) {
+            //System.out.println("No Path Found.");
+			//}
+			if (dist == -1.0) {
+				System.out.println("No Path Found.");
             } else {
             	System.out.println(dist);
             }
