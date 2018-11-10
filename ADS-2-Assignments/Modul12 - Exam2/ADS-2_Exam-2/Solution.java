@@ -24,7 +24,7 @@ public final class Solution {
 			String[] tokens = sc.nextLine().split(" ");
 			Dijkstra d = new Dijkstra(e, Integer.parseInt(tokens[0]));
 			double distance = d.distTo(Integer.parseInt(tokens[1]));
-			if (!d.hasPathTo(Integer.parseInt(tokens[0]))) {
+			if (!d.hasPathTo(Integer.parseInt(tokens[1]))) {
             	System.out.println("No Path Found.");
             } else {
             	System.out.println(distance);
