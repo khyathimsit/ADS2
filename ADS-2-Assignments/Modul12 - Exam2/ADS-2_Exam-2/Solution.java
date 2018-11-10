@@ -34,7 +34,10 @@ public final class Solution {
 		case "ViaPaths":
 			String[] line = sc.nextLine().split(" ");
 			Dijkstra dij = new Dijkstra(e, Integer.parseInt(line[0]));
-			double dist = dij.distTo(Integer.parseInt(line[1]));
+			double dist = dij.distTo(Integer.parseInt(line[2]));
+			// Dijkstra dij1 = new Dijkstra(e, Integer.parseInt(line[1]));
+			// double dist1 = dij1.distTo(Integer.parseInt(line[2]));
+			// double res = dist + dist1;
 			// if (!dij.hasPathTo(Integer.parseInt(line[1]))) {
             //System.out.println("No Path Found.");
 			//}
@@ -51,3 +54,30 @@ public final class Solution {
 
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// case "ViaPaths":
+			
+		// 	String[] line1 = sc.nextLine().split(" ");
+		// 	Dijkstras dijk = new Dijkstras(edwgh, Integer.parseInt(line1[0]));
+  //           double num1 = dijk.distTo(Integer.parseInt(line1[2]));
+  //           if (num1 == -1.0) {
+  //           	System.out.println("No Path Found.");
+  //           } else {
+  //           	System.out.println(num1);
+  //           }
+		// 	break;
