@@ -68,9 +68,9 @@ public final class Solution {
                         s += temp + " ";
                     }
                     via = temp;
+                    System.out.println(s);
                 }
                 System.out.println(s);
-
             } else {
                 System.out.println("No Path Found.");
             }
