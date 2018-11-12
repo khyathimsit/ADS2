@@ -3,7 +3,7 @@
  */
 public class Quick3string {
     /**
-     * cutoff variable
+     * cutoff variable.
      */
     private static final int CUTOFF =  15;
 
@@ -19,7 +19,7 @@ public class Quick3string {
      */
     public static void sort(final String[] a) {
         // StdRandom.shuffle(a);
-        sort(a, 0, a.length-1, 0);
+        sort(a, 0, a.length - 1, 0);
         assert isSorted(a);
     }
 
@@ -72,11 +72,11 @@ public class Quick3string {
         }
 
         // a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi].
-        sort(a, lo, lt-1, d);
+        sort(a, lo, lt - 1, d);
         if (v >= 0) {
-            sort(a, lt, gt, d+1);
+            sort(a, lt, gt, d + 1);
         }
-        sort(a, gt+1, hi, d);
+        sort(a, gt + 1, hi, d);
     }
 
     /**
@@ -90,8 +90,8 @@ public class Quick3string {
     private static void insertion(final String[] a, final int lo,
         final int hi, final int d) {
         for (int i = lo; i <= hi; i++) {
-            for (int j = i; j > lo && less(a[j], a[j-1], d); j--) {
-                exch(a, j, j-1);
+            for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
+                exch(a, j, j - 1);
             }
         }
     }
@@ -150,7 +150,7 @@ public class Quick3string {
      */
     private static boolean isSorted(final String[] a) {
         for (int i = 1; i < a.length; i++) {
-            if (a[i].compareTo(a[i-1]) < 0) {
+            if (a[i].compareTo(a[i - 1]) < 0) {
                 return false;
             }
         }
