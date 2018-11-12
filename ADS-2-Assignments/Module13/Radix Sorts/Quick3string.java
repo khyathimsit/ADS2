@@ -89,7 +89,7 @@ public class Quick3string {
 
     public String toString(String[] array) {
         String string = "[";
-        for(int i=0;i<array.length-2;i++) {
+        for(int i=0;i<array.length-1;i++) {
             string += array[i] + ", ";
         }
         string += array[array.length-1] + "]";
