@@ -113,11 +113,11 @@ public class Quick3string {
     // DEPRECATED BECAUSE OF SLOW SUBSTRING EXTRACTION IN JAVA 7
     // private static boolean less(String v, String w, int d) {
     //    assert v.substring(0, d).equals(w.substring(0, d));
-    //    return v.substring(d).compareTo(w.substring(d)) < 0; 
+    //    return v.substring(d).compareTo(w.substring(d)) < 0;
     // }
 
     // is v less than w, starting at character d
-    
+
     /**
      * less function.
      *
@@ -165,7 +165,7 @@ public class Quick3string {
      */
     public String toString(final String[] array) {
         String string = "[";
-        for(int i = 0; i < array.length - 1; i++) {
+        for (int i = 0; i < array.length - 1; i++) {
             string += array[i] + ", ";
         }
         string += array[array.length - 1] + "]";

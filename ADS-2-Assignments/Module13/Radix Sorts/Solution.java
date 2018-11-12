@@ -19,7 +19,7 @@ public final class Solution {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         String[] array = new String[n];
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             array[i] = scan.nextLine();
         }
         Quick3string quickobj = new Quick3string();
