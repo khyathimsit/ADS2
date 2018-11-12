@@ -69,8 +69,10 @@ Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module13\Radix Sorts\Quick3string.java:92:35: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module13\Radix Sorts\Quick3string.java:92:36: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module13\Radix Sorts\Quick3string.java:92:38: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module13\Radix Sorts\Quick3string.java:95:37: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module13\Radix Sorts\Quick3string.java:95:38: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 70 errors.
+Checkstyle ends with 72 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module13\Radix Sorts\Solution.java:2: Missing a Javadoc comment. [JavadocType]
