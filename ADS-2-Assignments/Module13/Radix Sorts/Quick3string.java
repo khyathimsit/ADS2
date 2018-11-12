@@ -16,6 +16,7 @@ public class Quick3string {
      * { sort function }
      *
      * @param      a     { parameter_description }
+     * Time complexity: O(1.39N log N)
      */
     public static void sort(final String[] a) {
         // StdRandom.shuffle(a);
@@ -30,6 +31,7 @@ public class Quick3string {
      * @param      d     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * Time complexity: O(1)
      */
     private static int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
@@ -47,6 +49,7 @@ public class Quick3string {
      * @param      lo    The lower
      * @param      hi    The higher
      * @param      d     { parameter_description }
+     * Time complexity: O(1.39N log N)
      */
     private static void sort(final String[] a, final int lo,
         final int hi, final int d) {
@@ -86,6 +89,7 @@ public class Quick3string {
      * @param      lo    The lower
      * @param      hi    The higher
      * @param      d     { parameter_description }
+     * time complexity for this method is O(N^2).
      */
     private static void insertion(final String[] a, final int lo,
         final int hi, final int d) {
@@ -102,6 +106,7 @@ public class Quick3string {
      * @param      a     { parameter_description }
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
+     * time complexity for this method is O(1)
      */
     private static void exch(final String[] a, final int i, final int j) {
         String temp = a[i];
@@ -126,6 +131,7 @@ public class Quick3string {
      * @param      d     { parameter_description }
      *
      * @return     { description_of_the_return_value }
+     * time complexity for this method is O(N)
      */
     private static boolean less(final String v, final String w,
         final int d) {
@@ -147,6 +153,7 @@ public class Quick3string {
      * @param      a     { parameter_description }
      *
      * @return     True if sorted, False otherwise.
+     * time complexity for this method is O(N).
      */
     private static boolean isSorted(final String[] a) {
         for (int i = 1; i < a.length; i++) {
@@ -162,6 +169,7 @@ public class Quick3string {
      * @param      array  The array
      *
      * @return     String representation of the object.
+     * time complexity for this method is O(N).
      */
     public String toString(final String[] array) {
         String string = "[";
@@ -171,28 +179,4 @@ public class Quick3string {
         string += array[array.length - 1] + "]";
         return string;
     }
-
-
-    // /**
-    //  * Reads in a sequence of fixed-length strings
-    //  * from standard input;
-    //  * 3-way radix quicksorts them;
-    //  * and prints them to standard output in ascending order.
-    //  *
-    //  * @param args the command-line arguments
-    //  */
-    // public static void main(String[] args) {
-
-    //     // read in the strings from standard input
-    //     String[] a = StdIn.readAllStrings();
-    //     int n = a.length;
-
-    //     // sort the strings
-    //     sort(a);
-
-    //     // print the results
-    //     for (int i = 0; i < n; i++)
-    //         StdOut.println(a[i]);
-    // }
 }
-
