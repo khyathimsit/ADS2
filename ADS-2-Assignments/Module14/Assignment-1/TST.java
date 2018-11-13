@@ -75,7 +75,9 @@ public class TST<Value> {
                 "key must have length >= 1");
         }
         Node<Value> x = get(root, key, 0);
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         return x.val;
     }
     /**.
@@ -102,7 +104,7 @@ public class TST<Value> {
         } else if (c > x.c) {
             return get(x.right, key, d);
         } else if (d < key.length() - 1) {
-            return get(x.mid,   key, d+1);
+            return get(x.mid,   key, d + 1);
         } else {
             return x;
         }
@@ -146,7 +148,7 @@ public class TST<Value> {
         } else if (c > x.c) {
             x.right = put(x.right, key, val, d);
         } else if (d < key.length() - 1) {
-            x.mid = put(x.mid, key, val, d+1);
+            x.mid = put(x.mid, key, val, d + 1);
         } else {
             x.val = val;
         }

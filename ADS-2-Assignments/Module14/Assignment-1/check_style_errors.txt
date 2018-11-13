@@ -73,12 +73,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:78: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:105:39: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:105:40: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:149:43: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:149:44: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:277:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:277:54: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:279:53: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:279:54: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 2 errors.
