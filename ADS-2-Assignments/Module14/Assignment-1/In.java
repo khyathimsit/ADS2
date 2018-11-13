@@ -69,15 +69,18 @@ public final class In {
     /**.
      * { var_description }
      */
-    private static final Pattern WHITESPACE_PATTERN = Pattern.compile("\\p{javaWhitespace}+");
+    private static final Pattern WHITESPACE_PATTERN =
+                Pattern.compile("\\p{javaWhitespace}+");
     /**.
      * { var_description }
      */
-    private static final Pattern EMPTY_PATTERN = Pattern.compile("");
+    private static final Pattern EMPTY_PATTERN =
+         Pattern.compile("");
     /**.
      * { var_description }
      */
-    private static final Pattern EVERYTHING_PATTERN = Pattern.compile("\\A");
+    private static final Pattern EVERYTHING_PATTERN =
+          Pattern.compile("\\A");
     /**.
      * { var_description }
      */
@@ -86,7 +89,8 @@ public final class In {
      * Constructs the object.
      */
     public In() {
-        scanner = new Scanner(new BufferedInputStream(System.in), CHARSET_NAME);
+        scanner = new Scanner(new BufferedInputStream(
+            System.in), CHARSET_NAME);
         scanner.useLocale(LOCALE);
     }
     /**.
@@ -96,14 +100,17 @@ public final class In {
      */
     public In(final Socket socket) {
         if (socket == null) {
-            throw new IllegalArgumentException("socket argument is null");
+            throw new IllegalArgumentException(
+                "socket argument is null");
         }
         try {
             InputStream is = socket.getInputStream();
-            scanner = new Scanner(new BufferedInputStream(is), CHARSET_NAME);
+            scanner = new Scanner(
+                new BufferedInputStream(is), CHARSET_NAME);
             scanner.useLocale(LOCALE);
         } catch (IOException ioe) {
-            throw new IllegalArgumentException("Could not open " + socket, ioe);
+            throw new IllegalArgumentException(
+                "Could not open " + socket, ioe);
         }
     }
     /**.
@@ -118,10 +125,12 @@ public final class In {
         try {
             URLConnection site = url.openConnection();
             InputStream is = site.getInputStream();
-            scanner = new Scanner(new BufferedInputStream(is), CHARSET_NAME);
+            scanner = new Scanner(
+                new BufferedInputStream(is), CHARSET_NAME);
             scanner.useLocale(LOCALE);
         } catch (IOException ioe) {
-            throw new IllegalArgumentException("Could not open " + url, ioe);
+            throw new IllegalArgumentException(
+                "Could not open " + url, ioe);
         }
     }
     /**.
@@ -151,11 +160,11 @@ public final class In {
             throw new IllegalArgumentException("argument is null");
         }
         try {
-            // first try to read file from local file system
             File file = new File(name);
             if (file.exists()) {
                 FileInputStream fis = new FileInputStream(file);
-                scanner = new Scanner(new BufferedInputStream(fis), CHARSET_NAME);
+                scanner = new Scanner(
+                    new BufferedInputStream(fis), CHARSET_NAME);
                 scanner.useLocale(LOCALE);
                 return;
             }
@@ -168,10 +177,12 @@ public final class In {
             }
             URLConnection site = url.openConnection();
             InputStream is = site.getInputStream();
-            scanner = new Scanner(new BufferedInputStream(is), CHARSET_NAME);
+            scanner = new Scanner(
+                new BufferedInputStream(is), CHARSET_NAME);
             scanner.useLocale(LOCALE);
         } catch (IOException ioe) {
-            throw new IllegalArgumentException("Could not open " + name, ioe);
+            throw new IllegalArgumentException(
+                "Could not open " + name, ioe);
         }
     }
     /**.
@@ -181,7 +192,8 @@ public final class In {
      */
     public In(final Scanner scanner) {
         if (scanner == null) {
-            throw new IllegalArgumentException("scanner argument is null");
+            throw new IllegalArgumentException(
+                "scanner argument is null");
         }
         this.scanner = scanner;
     }
