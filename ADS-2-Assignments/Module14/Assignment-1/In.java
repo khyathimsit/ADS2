@@ -489,8 +489,8 @@ public final class In {
         if (tokens.length == 0 || tokens[0].length() > 0) {
             return tokens;
         }
-        String[] decapitokens = new String[tokens.length-1];
-        for (int i = 0; i < tokens.length-1; i++) {
+        String[] decapitokens = new String[tokens.length - 1];
+        for (int i = 0; i < tokens.length - 1; i++) {
             decapitokens[i] = tokens[i + 1];
         }
         return decapitokens;
@@ -559,7 +559,7 @@ public final class In {
      * Closes this input stream.
      */
     public void close() {
-        scanner.close();  
+        scanner.close();
     }
     /**.
      * Reads all integers from a file and returns them as
