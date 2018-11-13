@@ -153,6 +153,10 @@ Starting audit...
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:7:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:8:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module14\Assignment-1\TST.java:10: Missing a Javadoc comment. [JavadocType]

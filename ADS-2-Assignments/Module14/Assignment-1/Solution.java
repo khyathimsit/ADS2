@@ -20,12 +20,12 @@ public final class Solution {
 		Scanner sc = new Scanner(System.in);
 		TST<Integer> tst = new TST<Integer>();
 		for (int i = 0; i < words.length; i++) {
-			tst.put(words[i], i);
-		}
-		String prefix = sc.nextLine();
-		for (String str : tst.keysWithPrefix(prefix)) {
-			System.out.println(str);
-		}
+			SuffixArray sarr = new SuffixArray(words[i], tst);
+        }
+        String line = sc.nextLine();
+        for (String str : tst.keysWithPrefix(line)) {
+            System.out.println(str);
+        }
 	}
 
 	public static String[] loadWords() {
