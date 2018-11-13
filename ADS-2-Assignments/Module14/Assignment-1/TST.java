@@ -276,7 +276,7 @@ public class TST<Value> {
                 queue.enqueue(prefix.toString() + x.c);
             }
             if (i < pattern.length() - 1) {
-                collect(x.mid, prefix.append(x.c), i+1, pattern, queue);
+                collect(x.mid, prefix.append(x.c), i + 1, pattern, queue);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
         }
