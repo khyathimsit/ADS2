@@ -188,7 +188,7 @@ public final class In {
     /**.
      * Constructs the object.
      *
-     * @param      scanner  The scanner
+     * @param      sc  The scanner
      */
     public In(final Scanner sc) {
         if (sc == null) {
@@ -361,8 +361,7 @@ public final class In {
             throw new InputMismatchException(
                 "attempts to read a 'float' value from the input stream, "
                  + "but the next token is \"" + token + "\"");
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             throw new NoSuchElementException(
                 "attemps to read a 'float' value from the input stream, "
                  + "but no more tokens are available");
@@ -406,8 +405,7 @@ public final class In {
     public short readShort() {
         try {
             return scanner.nextShort();
-        }
-        catch (InputMismatchException e) {
+        } catch (InputMismatchException e) {
             String token = scanner.next();
             throw new InputMismatchException(
                 "attempts to read a 'short' value from the input stream, "
@@ -466,7 +464,8 @@ public final class In {
             }
             if ("1".equals(token)) {
                 return true;
-            }if ("0".equals(token)) {
+            }
+            if ("0".equals(token)) {
                 return false;
             }
             throw new InputMismatchException(
@@ -491,7 +490,7 @@ public final class In {
             return tokens;
         }
         String[] decapitokens = new String[tokens.length-1];
-        for (int i = 0; i < tokens.length - 1; i++) {
+        for (int i = 0; i < tokens.length-1; i++) {
             decapitokens[i] = tokens[i + 1];
         }
         return decapitokens;
