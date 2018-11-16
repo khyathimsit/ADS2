@@ -1,21 +1,13 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\BoggleBoard.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Files to process must be specified, found 0.
