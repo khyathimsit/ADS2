@@ -1,10 +1,6 @@
 /**.
  * { item_description }
  */
-import java.util.Arrays;
-/**.
- * { item_description }
- */
 import java.util.Scanner;
 /**.
  * Class for solution.

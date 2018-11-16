@@ -216,15 +216,7 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\Solution.java:4:8: Unused import - java.util.Arrays. [UnusedImports]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\TrieSET.java:25:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\TrieSET.java:26:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\TrieSET.java:101:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\TrieSET.java:104:46: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\TrieSET.java:104:47: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\TrieSET.java:206:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 6 errors.
