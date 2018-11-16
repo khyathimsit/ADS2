@@ -2,13 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\BoggleBoard.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\BoggleBoard.java:76:13: '4' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\BoggleBoard.java:80:13: '4' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\BoggleBoard.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\BoggleBoard.java:130:34: 'm' hides a field. [HiddenField]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\BoggleBoard.java:130:47: 'n' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

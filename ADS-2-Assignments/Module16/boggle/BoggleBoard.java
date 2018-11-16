@@ -73,11 +73,11 @@ public class BoggleBoard {
         /**.
          * { item_description }
          */
-        m = 4;
+        m = 2 + 2;
         /**.
          * { item_description }
          */
-        n = 4;
+        n = 2 + 2;
         StdRandom.shuffle(BOGGLE_1992);
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
@@ -101,8 +101,10 @@ public class BoggleBoard {
             throw new IllegalArgumentException(
                 "number of rows must be a positive integer");
         }
-        if (n <= 0) throw new IllegalArgumentException(
+        if (n <= 0) {
+            throw new IllegalArgumentException(
             "number of columns must be a positive integer");
+        }
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -124,12 +126,12 @@ public class BoggleBoard {
     /**.
      * Constructs the object.
      *
-     * @param      m     { parameter_description }
-     * @param      n     { parameter_description }
+     * @param      m1     { parameter_description }
+     * @param      n1    { parameter_description }
      */
-    public BoggleBoard(final int m, final int n) {
-        this.m = m;
-        this.n = n;
+    public BoggleBoard(final int m1, final int n1) {
+        this.m = m1;
+        this.n = n1;
         if (m <= 0) {
             throw new IllegalArgumentException(
                 "number of rows must be a positive integer");
