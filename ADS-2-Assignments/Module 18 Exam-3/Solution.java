@@ -120,7 +120,43 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return null;
+		ArrayList<String> list = new ArrayList<String>();
+		for(String word : tst.keys()) {
+			String[] chars = word.split("");
+			String str = "";
+			for (String ch : chars) {
+				if (ch.equals("a") || ch.equals("b") || ch.equals("c")) {
+					str = str + 2;
+				}
+				if (ch.equals("d") || ch.equals("e") || ch.equals("f")) {
+					str = str + 3;
+				}
+				if (ch.equals("g") || ch.equals("h") || ch.equals("i")) {
+					str = str + 4;
+				}
+				if (ch.equals("j") || ch.equals("k") || ch.equals("l")) {
+					str = str + 5;
+				}
+				if (ch.equals("m") || ch.equals("n") || ch.equals("o")) {
+					str = str + 6;
+				}
+				if (ch.equals("p") || ch.equals("q") || ch.equals("r")) {
+					str = str + 7;
+				}
+				if (ch.equals("t") || ch.equals("u") || ch.equals("v")) {
+					str = str + 8;
+				}
+				if (ch.equals("x") || ch.equals("y") || ch.equals("z")) {
+					str = str + 9;
+				}
+			}
+			if (str.equals(t9Signature)) {
+				if (tst.contains(word)) {
+					list.add(word);
+				}
+			}
+		}
+		return list;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.

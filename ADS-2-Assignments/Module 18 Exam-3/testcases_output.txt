@@ -157,8 +157,60 @@ fine
 seeking
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:39)
+hello
+pizza
+ball
+balls
+call
+calls
+involve
+gone
+good
+goods
+home
+battery
+morning
+mornings
+tonight
+phne
+any
+box
+boy
+boys
+coz
+jay
+jays
+jaz
+kay
+lay
+lays
+ammo
+amnow
+ear
+ears
+far
+swear
+wear
+spend
+pocked
+abusers
+paying
+packing
+bam
+bao
+cam
+can
+abt
+act
+bat
+cat
+liver
+dime
+dine
+find
+finds
+fine
+sfine
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -224,9 +276,10 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:131)
-	at T9.t9(Solution.java:149)
+Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
+	at MaxPQ.delMax(MaxPQ.java:174)
+	at T9.getSuggestions(Solution.java:171)
+	at T9.t9(Solution.java:185)
 	at Solution.main(Solution.java:71)
 ----------------------------------------
 
