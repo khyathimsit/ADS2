@@ -189,6 +189,7 @@ class T9 {
      * @param      prefix  The prefix
      *
      * @return     All words.
+     * Time Complexity: O(N)
      */
     public Iterable<String> getAllWords(final String prefix) {
         // your code goes here
@@ -200,6 +201,7 @@ class T9 {
      * @param      t9Signature  The t 9 signature
      *
      * @return     { description_of_the_return_value }
+     * Time Complexity: O(N)
      */
     public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
@@ -250,6 +252,7 @@ class T9 {
      * @param      k      { parameter_description }
      *
      * @return     The suggestions.
+     * Time Complexity: O(N)
      */
     public Iterable<String> getSuggestions(
            final Iterable<String> words, final int k) {
