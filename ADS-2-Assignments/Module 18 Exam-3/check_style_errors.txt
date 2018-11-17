@@ -2,13 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\BinarySearchST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\BinarySearchST.java:123:21: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\BinarySearchST.java:170: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\BinarySearchST.java:189:24: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\BinarySearchST.java:194: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\BinarySearchST.java:206:41: '4' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\In.java:56:1: File contains tab characters (this is the first instance). [FileTabCharacter]

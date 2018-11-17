@@ -120,7 +120,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      * symbol table strictly less than {@code key}
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public int rank(Key key) {
+    public int rank(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException(
                 "argument to rank() is null");
@@ -167,7 +167,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
             vals[i] = val;
             return;
         }
-        if (n == keys.length) resize(2 * keys.length);
+        if (n == keys.length) {
+            resize(2 * keys.length);
+        }
         for (int j = n; j > i; j--)  {
             keys[j] = keys[j - 1];
             vals[j] = vals[j - 1];
@@ -186,12 +188,14 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException
      * if {@code key} is {@code null}
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException(
                 "argument to delete() is null");
         }
-        if (isEmpty()) return;
+        if (isEmpty()) {
+            return;
+        }
         int i = rank(key);
         if (i == n || keys[i].compareTo(key) != 0) {
             return;
@@ -203,7 +207,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         n--;
         keys[n] = null;
         vals[n] = null;
-        if (n > 0 && n == keys.length / 4) {
+        if (n > 0 && n == keys.length / 2 + 2) {
             resize(keys.length / 2);
         }
         assert check();
