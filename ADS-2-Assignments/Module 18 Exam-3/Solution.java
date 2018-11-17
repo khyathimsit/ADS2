@@ -140,13 +140,13 @@ class T9 {
 				if (ch.equals("m") || ch.equals("n") || ch.equals("o")) {
 					str = str + 6;
 				}
-				if (ch.equals("p") || ch.equals("q") || ch.equals("r")) {
+				if (ch.equals("p") || ch.equals("q") || ch.equals("r") || ch.equals("s")) {
 					str = str + 7;
 				}
 				if (ch.equals("t") || ch.equals("u") || ch.equals("v")) {
 					str = str + 8;
 				}
-				if (ch.equals("x") || ch.equals("y") || ch.equals("z")) {
+				if (ch.equals("w") || ch.equals("x") || ch.equals("y") || ch.equals("z")) {
 					str = str + 9;
 				}
 			}
