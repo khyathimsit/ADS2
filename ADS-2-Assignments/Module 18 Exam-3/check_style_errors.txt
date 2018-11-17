@@ -6,13 +6,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\In.java:221:15: Parameter scanner should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\In.java:221:23: 'scanner' hides a field. [HiddenField]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\In.java:409: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\In.java:414: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\In.java:616: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

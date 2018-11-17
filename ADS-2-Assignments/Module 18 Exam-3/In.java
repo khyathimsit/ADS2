@@ -214,16 +214,16 @@ public final class In {
      * Note that this does not create a defensive copy, so the
      * scanner will be mutated as you read on.
      *
-     * @param  scanner the scanner
+     * @param  sc the scanner
      * @throws IllegalArgumentException
      * if {@code scanner} is {@code null}
      */
-    public In(Scanner scanner) {
-        if (scanner == null) {
+    public In(final Scanner sc) {
+        if (sc == null) {
             throw new IllegalArgumentException(
                 "scanner argument is null");
         }
-        this.scanner = scanner;
+        this.scanner = sc;
     }
 
     /**.
@@ -406,12 +406,13 @@ public final class In {
     }
 
     /**.
-      * Reads the next token from this input stream, parses it as a {@code float},
+      * Reads the next token from this input stream,
+      * parses it as a {@code float},
       * and returns the {@code float}.
       *
       * @return the next {@code float} in this input stream
       * @throws NoSuchElementException if the input stream is empty
-      * @throws InputMismatchException 
+      * @throws InputMismatchException
       * if the next token cannot be parsed as a {@code float}
       */
     public float readFloat() {
@@ -613,7 +614,8 @@ public final class In {
     }
 
     /**.
-     * Reads all remaining tokens from this input stream, parses them as doubles,
+     * Reads all remaining tokens from this input stream,
+     * parses them as doubles,
      * and returns them as an array of doubles.
      *
      * @return all remaining lines in this input stream, as an array of doubles
