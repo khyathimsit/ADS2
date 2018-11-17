@@ -149,22 +149,18 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:16:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:135:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:136:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:136:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:136:15: Parameter st should be final. [FinalParameters]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:165:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:173:33: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:176:33: '4' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:179:33: '5' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:182:33: '6' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:184:54: '||' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:186:33: '7' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:189:33: '8' is a magic number. [MagicNumber]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:191:54: '||' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:193:33: '9' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:150:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:179:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:187:33: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:190:33: '4' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:193:33: '5' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:196:33: '6' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:198:54: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:200:33: '7' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:203:33: '8' is a magic number. [MagicNumber]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:205:54: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\user\Desktop\ADS2\ADS-2-Assignments\Module 18 Exam-3\Solution.java:207:33: '9' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 Audit done.

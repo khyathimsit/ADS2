@@ -15,6 +15,12 @@ import java.util.ArrayList;
  */
 public final class Solution {
     /**.
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**.
      * { function_description }
      *
      * @param      args  The arguments
@@ -132,8 +138,16 @@ public final class Solution {
  * Class for t 9.
  */
 class T9 {
+    /**.
+     * { var_description }
+     */
     private TST<Integer> tst;
-    public T9(BinarySearchST<String, Integer> st) {
+    /**.
+     * Constructs the object.
+     *
+     * @param      st    { parameter_description }
+     */
+    public T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
         for (String i : st.keys()) {
