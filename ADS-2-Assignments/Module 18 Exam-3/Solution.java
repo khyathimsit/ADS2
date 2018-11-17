@@ -143,6 +143,34 @@ class T9 {
      */
     private TST<Integer> tst;
     /**.
+     * { var_description }
+     */
+    public static final int T_H_R_E_E = 3;
+    /**.
+     * { var_description }
+     */
+    public static final int F_O_U_R = 4;
+    /**.
+     * { var_description }
+     */
+    public static final int F_I_V_E = 5;
+    /**.
+     * { var_description }
+     */
+    public static final int S_I_X = 6;
+    /**.
+     * { var_description }
+     */
+    public static final int S_E_V_E_N = 7;
+    /**.
+     * { var_description }
+     */
+    public static final int E_I_G_H_T = 8;
+    /**.
+     * { var_description }
+     */
+    public static final int N_I_N_E = 9;
+    /**.
      * Constructs the object.
      *
      * @param      st    { parameter_description }
@@ -176,7 +204,7 @@ class T9 {
     public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
         ArrayList<String> list = new ArrayList<String>();
-        for(String word : tst.keys()) {
+        for (String word : tst.keys()) {
             String[] chars = word.split("");
             String str = "";
             for (String ch : chars) {
@@ -184,27 +212,27 @@ class T9 {
                     str = str + 2;
                 }
                 if (ch.equals("d") || ch.equals("e") || ch.equals("f")) {
-                    str = str + 3;
+                    str = str + T_H_R_E_E;
                 }
                 if (ch.equals("g") || ch.equals("h") || ch.equals("i")) {
-                    str = str + 4;
+                    str = str + F_O_U_R;
                 }
                 if (ch.equals("j") || ch.equals("k") || ch.equals("l")) {
-                    str = str + 5;
+                    str = str + F_I_V_E;
                 }
                 if (ch.equals("m") || ch.equals("n") || ch.equals("o")) {
-                    str = str + 6;
+                    str = str + S_I_X;
                 }
-                if (ch.equals("p") || ch.equals("q") ||
-                    ch.equals("r") || ch.equals("s")) {
-                    str = str + 7;
+                if (ch.equals("p") || ch.equals("q")
+                    || ch.equals("r") || ch.equals("s")) {
+                    str = str + S_E_V_E_N;
                 }
                 if (ch.equals("t") || ch.equals("u") || ch.equals("v")) {
-                    str = str + 8;
+                    str = str + E_I_G_H_T;
                 }
-                if (ch.equals("w") || ch.equals("x") ||
-                    ch.equals("y") || ch.equals("z")) {
-                    str = str + 9;
+                if (ch.equals("w") || ch.equals("x")
+                    || ch.equals("y") || ch.equals("z")) {
+                    str = str + N_I_N_E;
                 }
             }
             if (str.equals(t9Signature)) {

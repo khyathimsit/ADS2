@@ -91,7 +91,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      * Returns the value associated with the given key in this symbol table.
      *
      * @param  key the key
-     * @return the value associated with the given key if the key is in the symbol table
+     * @return the value associated with the
+     * given key if the key is in the symbol table
      *         and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
@@ -195,7 +196,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         n--;
         keys[n] = null;
         vals[n] = null;
-        if (n > 0 && n == keys.length / 4) resize(keys.length / 2);
+        if (n > 0 && n == keys.length / 2 + 2) {
+            resize(keys.length / 2);
+        }
         assert check();
     }
     /**.
